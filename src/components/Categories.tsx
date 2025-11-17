@@ -11,13 +11,13 @@ import datesImg from "@/assets/Dates.png";
 import toysImg from "@/assets/Pista.png";
 
 const categories = [
-  { id: 1, name: "Chocolates", image: "src/assets/images/cho.jpg", description: "Premium chocolates from around the world", path: "/chocolate" },
+  { id: 1, name: "Chocolates", image: "/images/cho.jpg", description: "Premium chocolates from around the world", path: "/chocolate" },
   { id: 2, name: "Biscuits", image: biscuitsImg, description: "Delicious biscuits for every occasion", path: "/biscuits" },
   { id: 3, name: "Nuts", image: nutsImg, description: "Healthy and nutritious nuts", path: "/nuts" },
   { id: 4, name: "Perfumes", image: perfumeImg, description: "Luxury fragrances for everyone", path: "/perfumes" },
   { id: 5, name: "Dates", image: datesImg, description: "Fresh and premium quality dates", path: "/dates" },
-  { id: 6, name: "Toys", image: "src/assets/images/toy.jpg", description: "Fun toys for children of all ages", path: "/toys" },
- { id: 7, name: "Chips", image: "src/assets/images/chips.jpg", description: "Healthy Healthy", path: "/chips" },
+  { id: 6, name: "Toys", image: "/images/toy.jpg", description: "Fun toys for children of all ages", path: "/toys" },
+ { id: 7, name: "Chips", image: "/images/chips.jpg", description: "Healthy Healthy", path: "/chips" },
 ];
 
 const Categories = () => {

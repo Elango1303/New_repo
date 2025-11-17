@@ -15,18 +15,18 @@ interface Product {
 }
 
 const datesProducts: Product[] = [
-  { id: 1, name: "AJWA PREMIUM", basePrice: 210, description: "AJWA premium dates", image: "src/assets/images/dates/ajwa_premiem.jpg" },
-  { id: 2, name: "AJWA PSEL", basePrice: 200, description: "AJWA psel dates", image:  "src/assets/images/dates/Ajwa_psel.jpg" },
-  { id: 3, name: "AJWA MEDIUM", basePrice: 150, description: "AJWA medium dates", image:  "src/assets/images/dates/ajwa_premiem.jpg" },
-  { id: 4, name: "PREMIUM MEJDOOL JORDAN JUMBO", basePrice: 195, description: "Premium Medjool Jordan jumbo", image:  "src/assets/images/dates/mejdool_jordan.jpg" },
+  { id: 1, name: "AJWA PREMIUM", basePrice: 210, description: "AJWA premium dates", image: "/images/dates/ajwa_premiem.jpg" },
+  { id: 2, name: "AJWA PSEL", basePrice: 200, description: "AJWA psel dates", image:  "/images/dates/Ajwa_psel.jpg" },
+  { id: 3, name: "AJWA MEDIUM", basePrice: 150, description: "AJWA medium dates", image:  "/images/dates/ajwa_premiem.jpg" },
+  { id: 4, name: "PREMIUM MEJDOOL JORDAN JUMBO", basePrice: 195, description: "Premium Medjool Jordan jumbo", image:  "/images/dates/mejdool_jordan.jpg" },
   { id: 5, name: "MEJDOOL JORDAN", basePrice: 180, description: "Medjool Jordan dates", image: DatesImg },
-  { id: 6, name: "JORDAN MEDIUM", basePrice: 175, description: "Jordan medium dates", image:  "src/assets/images/dates/mejdool_jordan.jpg" },
-  { id: 7, name: "PREMIUM MABROOM JUMBO", basePrice: 145, description: "Premium Mabroom jumbo", image:  "src/assets/images/dates/mabroom jumbo.jpg" },
-  { id: 8, name: "PREMIUM SAGAI", basePrice: 125, description: "Premium Sagai dates", image:  "src/assets/images/dates/safai_dates.jpg" },
-  { id: 9, name: "SAFAWI", basePrice: 85, description: "Safawi dates", image:  "src/assets/images/dates/safai_dates.jpg" },
-  { id: 10, name: "MEJDOOL SMALL", basePrice: 60, description: "Medjool small dates", image:  "src/assets/images/dates/mejdool_small.jpg" },
-  { id: 11, name: "FAZEL", basePrice: 50, description: "Fazel dates", image:  "src/assets/images/dates/ajwa_premiem.jpg" },
-  { id: 12, name: "SEMI SAFAWI", basePrice: 40, description: "Semi Safawi dates", image:  "src/assets/images/dates/semi_safawi.jpg" },
+  { id: 6, name: "JORDAN MEDIUM", basePrice: 175, description: "Jordan medium dates", image:  "/images/dates/mejdool_jordan.jpg" },
+  { id: 7, name: "PREMIUM MABROOM JUMBO", basePrice: 145, description: "Premium Mabroom jumbo", image:  "/images/dates/mabroom jumbo.jpg" },
+  { id: 8, name: "PREMIUM SAGAI", basePrice: 125, description: "Premium Sagai dates", image:  "/images/dates/safai_dates.jpg" },
+  { id: 9, name: "SAFAWI", basePrice: 85, description: "Safawi dates", image:  "/images/dates/safai_dates.jpg" },
+  { id: 10, name: "MEJDOOL SMALL", basePrice: 60, description: "Medjool small dates", image:  "/images/dates/mejdool_small.jpg" },
+  { id: 11, name: "FAZEL", basePrice: 50, description: "Fazel dates", image:  "/images/dates/ajwa_premiem.jpg" },
+  { id: 12, name: "SEMI SAFAWI", basePrice: 40, description: "Semi Safawi dates", image:  "/images/dates/semi_safawi.jpg" },
 ];
 
 interface Feature {

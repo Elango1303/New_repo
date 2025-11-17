@@ -31,18 +31,18 @@ type PerfumeProduct = {
 };
 
 const perfumeProducts: PerfumeProduct[] = [
-  { id: 1, name: "HUGO", basePrice: 4000, description: "HUGO", image: "src/assets/images/perfume/hugo.jpg" },
-  { id: 2, name: "CALVIN KEVIN", basePrice: 3900, description: "CALVIN KEVIN PERFUME", image: "src/assets/images/perfume/calvin_kevin.jpg"  },
-  { id: 3, name: "515 CHAMP", basePrice: 5000, description: "515 CHAMP", image: "src/assets/images/perfume/hugo.jpg"  },
-  { id: 4, name: "ASDAAF", basePrice: 1949, description: "ASDAAF PERFUME", image: "src/assets/images/perfume/asdaaf.jpg"  },
-  { id: 5, name: "EAU DE PARFUM", basePrice: 3500, description: "EAU DE PARFUM", image: "src/assets/images/perfume/eau de parfum.jpg"  },
-  { id: 6, name: "YARA", basePrice: 500, description: "YARA PERFUME", image: "src/assets/images/perfume/yara.jpg"  },
-  { id: 7, name: "OUD MOOD", basePrice: 2499, description: "OUD MOOD", image: "src/assets/images/perfume/oud_mood.jpg"  },
-  { id: 8, name: "FERRARI", basePrice: 2999, description: "FERRARI PERFUME", image: "src/assets/images/perfume/ferrari_perfume.jpg"  },
-  { id: 9, name: "BURBERRY", basePrice: 8450, description: "BURBERRY PERFUME", image: "src/assets/images/perfume/burberry.jpg"  },
-  { id: 10, name: "MIDNIGHT BLUE", basePrice: 2000, description: "MIDNIGHT PERFUME", image: "src/assets/images/perfume/midnightblue.jpg"  },
-  { id: 11, name: "SHAGHUF", basePrice: 2000, description: "SHAGHUF PERFUME", image: "src/assets/images/perfume/shaghuf.jpg"  },
-  { id: 12, name: "SEMI WASHWASHAH", basePrice: 3400, description: "SEMI WASHWASHAH PERFUME", image: "src/assets/images/perfume/wash.jpg"  },
+  { id: 1, name: "HUGO", basePrice: 4000, description: "HUGO", image: "/images/perfume/hugo.jpg" },
+  { id: 2, name: "CALVIN KEVIN", basePrice: 3900, description: "CALVIN KEVIN PERFUME", image: "/images/perfume/calvin_kevin.jpg"  },
+  { id: 3, name: "515 CHAMP", basePrice: 5000, description: "515 CHAMP", image: "/images/perfume/hugo.jpg"  },
+  { id: 4, name: "ASDAAF", basePrice: 1949, description: "ASDAAF PERFUME", image: "/images/perfume/asdaaf.jpg"  },
+  { id: 5, name: "EAU DE PARFUM", basePrice: 3500, description: "EAU DE PARFUM", image: "/images/perfume/eau de parfum.jpg"  },
+  { id: 6, name: "YARA", basePrice: 500, description: "YARA PERFUME", image: "/images/perfume/yara.jpg"  },
+  { id: 7, name: "OUD MOOD", basePrice: 2499, description: "OUD MOOD", image: "/images/perfume/oud_mood.jpg"  },
+  { id: 8, name: "FERRARI", basePrice: 2999, description: "FERRARI PERFUME", image: "/images/perfume/ferrari_perfume.jpg"  },
+  { id: 9, name: "BURBERRY", basePrice: 8450, description: "BURBERRY PERFUME", image: "/images/perfume/burberry.jpg"  },
+  { id: 10, name: "MIDNIGHT BLUE", basePrice: 2000, description: "MIDNIGHT PERFUME", image: "/images/perfume/midnightblue.jpg"  },
+  { id: 11, name: "SHAGHUF", basePrice: 2000, description: "SHAGHUF PERFUME", image: "/images/perfume/shaghuf.jpg"  },
+  { id: 12, name: "SEMI WASHWASHAH", basePrice: 3400, description: "SEMI WASHWASHAH PERFUME", image: "/images/perfume/wash.jpg"  },
 ];
 
 const features = [

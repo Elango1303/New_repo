@@ -17,17 +17,17 @@ type ChipProduct = {
 // chips product list: basePrice is price per unit now (was per 100g)
 // use public image paths (place images in public/images/chips/) or change to imports
 const chipsProducts: ChipProduct[] = [
-  { id: 1, name: "LAY'S CLASSIC", basePrice: 35, description: "Classic salted potato chips", image: "src/assets/images/chips/plainsalt.jpg" },
-  { id: 2, name: "CHEESE BALLS", basePrice: 40, description: "Cheesy crunchy bites", image: "src/assets/images/chips/cheeseballs.jpg" },
-  { id: 3, name: "KETTLE SALT", basePrice: 45, description: "Kettle cooked salt chips", image: "src/assets/images/chips/kettlesalt.jpg" },
-  { id: 4, name: "SWEET CHILLI", basePrice: 38, description: "Sweet chilli flavored chips", image: "src/assets/images/chips/sweetchilli.jpg" },
-  { id: 5, name: "BBQ", basePrice: 40, description: "Barbecue flavored chips", image: "src/assets/images/chips/bbq.jpg" },
-  { id: 6, name: "SOUR CREAM & ONION", basePrice: 42, description: "Sour cream & onion", image: "src/assets/images/chips/sourcream.jpg" },
-  { id: 7, name: "PERI PERI", basePrice: 44, description: "Peri peri spicy chips", image: "src/assets/images/chips/periperi.jpg" },
-  { id: 8, name: "MEXICAN", basePrice: 39, description: "Mexican spicy mix", image: "src/assets/images/chips/mexican.jpg" },
-  { id: 9, name: "MASALA", basePrice: 36, description: "Indian masala chips", image:"src/assets/images/chips/masalachips.jpg" },
-  { id: 10, name: "PLAIN SALT", basePrice: 30, description: "Plain salted chips", image: "src/assets/images/chips/plainsalt.jpg" },
-   { id: 1, name: "OMAN CHIPS", basePrice: 35, description: "OMAN  chips", image: "src/assets/images/omanchip.jpg" },
+  { id: 1, name: "LAY'S CLASSIC", basePrice: 35, description: "Classic salted potato chips", image: "/images/chips/plainsalt.jpg" },
+  { id: 2, name: "CHEESE BALLS", basePrice: 40, description: "Cheesy crunchy bites", image: "/images/chips/cheeseballs.jpg" },
+  { id: 3, name: "KETTLE SALT", basePrice: 45, description: "Kettle cooked salt chips", image: "/images/chips/kettlesalt.jpg" },
+  { id: 4, name: "SWEET CHILLI", basePrice: 38, description: "Sweet chilli flavored chips", image: "/images/chips/sweetchilli.jpg" },
+  { id: 5, name: "BBQ", basePrice: 40, description: "Barbecue flavored chips", image: "/images/chips/bbq.jpg" },
+  { id: 6, name: "SOUR CREAM & ONION", basePrice: 42, description: "Sour cream & onion", image: "/images/chips/sourcream.jpg" },
+  { id: 7, name: "PERI PERI", basePrice: 44, description: "Peri peri spicy chips", image: "/images/chips/periperi.jpg" },
+  { id: 8, name: "MEXICAN", basePrice: 39, description: "Mexican spicy mix", image: "/images/chips/mexican.jpg" },
+  { id: 9, name: "MASALA", basePrice: 36, description: "Indian masala chips", image:"/images/chips/masalachips.jpg" },
+  { id: 10, name: "PLAIN SALT", basePrice: 30, description: "Plain salted chips", image: "/images/chips/plainsalt.jpg" },
+   { id: 1, name: "OMAN CHIPS", basePrice: 35, description: "OMAN  chips", image: "/images/omanchip.jpg" },
     ];
 
 const features = [
