@@ -19,10 +19,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// Import all product images
-import nutellaImg from "@/assets/images/raphotos/nutella.jpg";
-import lemonImg from "@/assets/images/raphotos/lemon_creams.jpg";
-
+// Product data
 const biscuitsProducts = [
   { 
     id: 1, 
@@ -43,7 +40,7 @@ const biscuitsProducts = [
     reviews: 198,
     description: "Refreshing lemon biscuits",
     weight: "200g",
-    image: lemonImg
+    image: "/images/raphotos/lemon_creams.jpg"
   },
   { 
     id: 3, 
@@ -125,7 +122,7 @@ const biscuitsProducts = [
     reviews: 123,
     description: "Zero sugar lemon biscuits",
     weight: "190g",
-    image: lemonImg
+    image: "/images/raphotos/lemon_creams.jpg"
   },
   { 
     id: 11, 
