@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CupSoda, Phone, Leaf, Truck, Shield, Award, ChevronRight, Sparkles, Apple, Heart } from "lucide-react";
+import { CupSoda, Phone, Leaf, Truck, Shield, Award, ChevronRight, Sparkles, Apple, Heart, Plus, Minus } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -163,8 +163,41 @@ const benefits = [
 ];
 
 const Juices = () => {
+  const [selectedQuantity, setSelectedQuantity] = useState<Record<number, string>>({});
+  const [favorites, setFavorites] = useState<Set<number>>(new Set());
+
+  const toggleFavorite = (productId: number) => {
+    setFavorites((prev) => {
+      const newFavorites = new Set(prev);
+      if (newFavorites.has(productId)) newFavorites.delete(productId);
+      else newFavorites.add(productId);
+      return newFavorites;
+    });
+  };
+
+  const incrementQuantity = (productId: number) => {
+    const current = parseInt(selectedQuantity[productId] || "1", 10);
+    if (current < 50) {
+      setSelectedQuantity((prev) => ({ ...prev, [productId]: String(current + 1) }));
+    }
+  };
+
+  const decrementQuantity = (productId: number) => {
+    const current = parseInt(selectedQuantity[productId] || "1", 10);
+    if (current > 1) {
+      setSelectedQuantity((prev) => ({ ...prev, [productId]: String(current - 1) }));
+    }
+  };
+
+  const getPrice = (product: Product, quantity?: string | number) => {
+    const qty = typeof quantity === "string" ? parseInt(quantity || "1", 10) : (quantity || 1);
+    return product.price * qty;
+  };
+
   const contactWhatsApp = (product: Product) => {
-    const msg = `Hello, I'm interested in ${product.name} (${product.size}) - Price: ₹${product.price}. Please assist with ordering.`;
+    const quantity = parseInt(selectedQuantity[product.id] || "1", 10);
+    const totalPrice = getPrice(product, quantity);
+    const msg = `Hello, I'm interested in ${product.name} (${product.size}) - Quantity: ${quantity} (Total: ₹${totalPrice}). Please assist with ordering.`;
     const url = `https://wa.me/918888095594?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
   };
@@ -286,6 +319,18 @@ const Juices = () => {
               key={product.id}
               className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-sky-200 dark:hover:border-sky-700 relative"
             >
+              {/* Favorite Button */}
+              <button
+                onClick={() => toggleFavorite(product.id)}
+                className="absolute top-4 right-4 z-10 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-full p-2 hover:scale-110 transition-all duration-300 shadow-lg"
+              >
+                <Heart
+                  className={`h-5 w-5 transition-all duration-300 ${
+                    favorites.has(product.id) ? "fill-red-500 text-red-500" : "text-slate-400 hover:text-red-500"
+                  }`}
+                />
+              </button>
+
               <div className="aspect-square overflow-hidden bg-gradient-to-br from-sky-50 to-cyan-50 dark:from-slate-700 dark:to-slate-600 relative">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.1)_0%,_transparent_70%)]"></div>
                 <div className="w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500 relative z-10">
@@ -312,17 +357,42 @@ const Juices = () => {
                   Size: {product.size}
                 </p>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-cyan-600 bg-clip-text text-transparent">
-                    ₹{product.price}
+                  <span className="text-3xl font-bold bg-gradient-to-r from-sky-600 to-cyan-600 bg-clip-text text-transparent">
+                    ₹{getPrice(product, selectedQuantity[product.id] || 1)}
                   </span>
                   <span className="text-sm text-slate-500 dark:text-slate-400">/unit</span>
                 </div>
               </CardContent>
 
               <CardFooter className="p-5 pt-0 flex flex-col gap-3">
+                {/* Quantity Selector with + and - buttons */}
+                <div className="flex items-center gap-2 w-full">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => decrementQuantity(product.id)}
+                    className="h-10 w-10 rounded-full hover:bg-sky-50 dark:hover:bg-sky-900/20 border-2"
+                  >
+                    <Minus className="h-4 w-4" />
+                  </Button>
+                  <div className="flex-1 text-center">
+                    <span className="text-xl font-bold text-slate-900 dark:text-white">
+                      {selectedQuantity[product.id] || 1}
+                    </span>
+                  </div>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => incrementQuantity(product.id)}
+                    className="h-10 w-10 rounded-full hover:bg-sky-50 dark:hover:bg-sky-900/20 border-2"
+                  >
+                    <Plus className="h-4 w-4" />
+                  </Button>
+                </div>
+
                 <Button
                   onClick={() => contactWhatsApp(product)}
-                  className="w-full rounded-full font-semibold bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600"
+                  className="w-full rounded-full font-semibold transition-all duration-300 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600"
                 >
                   <Phone className="mr-2 h-4 w-4" />
                   Contact WhatsApp
