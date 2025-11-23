@@ -9,53 +9,255 @@ import PistaImg from "@/assets/Pista.png";
 import AlmondImg from "@/assets/Almond.png";
 import NutsImg from "@/assets/nuts.jpg";
 import MixedImg from "@/assets/mixed.png";
-// product list: basePrice is price per 100g
+// product list: basePrice is price per 100g (from the 100g column in total.xlsx)
 const nutsProducts = [
-  // Cashew
-  { id: 1, name: "GARLIC CHILLI KO", basePrice: 160, description: "Garlic chilli flavored cashew", image: "/images/nuts/cashew_ko.jpg " },
-  { id: 2, name: "CHILLI CASHEW", basePrice: 185, description: "Spicy chilli cashew", image: "/images/nuts/cashew_spicy.jpg " },
-  { id: 3, name: "PERI PERI", basePrice: 160, description: "Peri peri roasted cashew", image: "/images/nuts/periper.jpg " },
-  { id: 4, name: "GREEN CHILLI", basePrice: 160, description: "Green chilli cashew", image: "/images/nuts/green_chill.jpg " },
-  { id: 5, name: "TOMATO CHILLI", basePrice: 160, description: "Tomato chilli cashew", image: "/images/nuts/tomato_chilli.jpg " },
-  { id: 6, name: "CASHEW SPICY ROASTED", basePrice: 160, description: "Spicy roasted cashew", image: "/images/nuts/cashew_spicy.jpg " },
-  { id: 7, name: "CASHEW SALT ROASTED", basePrice: 160, description: "Salt roasted cashew", image: CashewImg },
-  { id: 8, name: "CASHEW CHEESE ROASTED", basePrice: 160, description: "Cheese roasted cashew", image: CashewImg },
-  { id: 9, name: "CASHEW BBQ ROASTED", basePrice: 160, description: "BBQ roasted cashew", image: "/images/nuts/cashew_bbq.jpg " },
-  { id: 10, name: "GARLIC CHILLI PSEL", basePrice: 185, description: "Garlic chilli special", image: "/images/nuts/gralic_chilli_psel.jpg " },
-  { id: 11, name: "CASHEW PEPPER", basePrice: 185, description: "Pepper cashew", image: "/images/nuts/cashewpepper.jpg " },
-  { id: 12, name: "CASHEW MIX", basePrice: 160, description: "Mixed cashew pack", image: "/images/nuts/cashew_mix.jpg " },
-  { id: 13, name: "CASHEW PEPPER ROASTED", basePrice: 160, description: "Pepper roasted cashew", image: "/images/nuts/cashewpepper.jpg " },
-  { id: 14, name: "W180", basePrice: 145, description: "W180 grade cashew", image: "/images/nuts/w180.jpg " },
-  { id: 15, name: "PLAIN KAJU", basePrice: 170, description: "Plain kaju", image: "/images/nuts/plain_kaju.jpg " },
-  { id: 16, name: "CASHEW SPLIT KO", basePrice: 116, description: "Split cashew", image: "/images/nuts/cashew_ko.jpg "  },
-  { id: 17, name: "CASHEW BORMA", basePrice: 130, description: "Cashew borma", image: "/images/nuts/cashew_borma.jpg " },
+  // CASHEWS (NUTS)
+  {
+    id: 1,
+    name: "GARLIC CHILLI KO",
+    basePrice: 160,
+    description: "Garlic chilli flavored cashew",
+    image: "/images/nuts/garlic_chilli_ko.jpg",
+  },
+  {
+    id: 2,
+    name: "CHILLI CASHEW",
+    basePrice: 185,
+    description: "Spicy chilli cashew",
+    image: "/images/nuts/chilli_cashew.jpg",
+  },
+  {
+    id: 3,
+    name: "PERI PERI",
+    basePrice: 160,
+    description: "Peri peri roasted cashew",
+    image: "/images/nuts/peri_peri.webp",
+  },
+  {
+    id: 4,
+    name: "GREEN CHILLI",
+    basePrice: 160,
+    description: "Green chilli cashew",
+    image: "/images/nuts/green_chilli.JPG",
+  },
+  {
+    id: 5,
+    name: "TOMATO CHILLI",
+    basePrice: 160,
+    description: "Tomato chilli cashew",
+    image: "/images/nuts/tomato_chilli.webp",
+  },
+  {
+    id: 6,
+    name: "CASHEW SPICY ROASTED",
+    basePrice: 160,
+    description: "Spicy roasted cashew",
+    image: CashewImg,
+  },
+  {
+    id: 7,
+    name: "CASHEW SALT ROASTED",
+    basePrice: 160,
+    description: "Salt roasted cashew",
+    image: "/images/nuts/cashew_salt_roasted.png",
+  },
+  {
+    id: 8,
+    name: "CASHEW CHEESE ROASTED",
+    basePrice: 160,
+    description: "Cheese roasted cashew",
+    image: "/images/nuts/cashew_cheese_roasted.jpg",
+  },
+  {
+    id: 9,
+    name: "CASHEW BBQ ROASTED",
+    basePrice: 160,
+    description: "BBQ roasted cashew",
+    image: "/images/nuts/cashew_bbq_roasted.jpg",
+  },
+  {
+    id: 10,
+    name: "GARLIC CHILLI PSEL",
+    basePrice: 185,
+    description: "Garlic chilli special cashew",
+    image: "/images/nuts/garlic_chilli_ko.jpg",
+  },
+  {
+    id: 11,
+    name: "CASHEW PEPPER",
+    basePrice: 185,
+    description: "Pepper flavored cashew",
+    image: "/images/nuts/cashew_pepper.jpg",
+  },
+  {
+    id: 12,
+    name: "CASHEW MIX",
+    basePrice: 160,
+    description: "Mixed cashew pack",
+    image: CashewImg,
+  },
+  {
+    id: 13,
+    name: "CASHEW PEPPER ROASTED",
+    basePrice: 160,
+    description: "Pepper roasted cashew",
+    image: "/images/nuts/cashew_pepper_roasted.jpg",
+  },
+  {
+    id: 14,
+    name: "W180 CASHEW",
+    basePrice: 145,
+    description: "W180 premium cashew",
+    image: "/images/nuts/w180_cashew.jpg",
+  },
+  {
+    id: 15,
+    name: "PREMIUM PLAIN KAJU",
+    basePrice: 170,
+    description: "Premium plain kaju",
+    image: "/images/nuts/premium_plain_kaju.jpeg",
+  },
+  {
+    id: 16,
+    name: "CASHEW SPLIT KO",
+    basePrice: 116,
+    description: "Split cashew",
+    image: "/images/nuts/cashew_split_ko.jpeg",
+  },
+  {
+    id: 17,
+    name: "CASHEW BORMA",
+    basePrice: 130,
+    description: "Cashew borma",
+    image: "/images/nuts/cashew_borma.jpeg",
+  },
 
-  // Pista
-  { id: 18, name: "PLAIN RAW PISTACHIO", basePrice: 194, description: "Plain raw pista", image: "/images/nuts/plain_pistachio.jpg " },
-  { id: 19, name: "PISTACHIO WITHOUT SHELL", basePrice: 268, description: "Pistachio without shell", image: "/images/nuts/without_shell.jpg " },
-  { id: 20, name: "PISTACHIO SALTED", basePrice: 190, description: "Salted pistachio", image: "/images/nuts/pistachio_salt.jpg " },
-  { id: 21, name: "PISTACHIO LEMON", basePrice: 190, description: "Lemon pistachio", image: "/images/nuts/pistachio_lemon.jpg " },
-  { id: 22, name: "PISTACHIO MIX", basePrice: 190, description: "Pistachio mix", image: "/images/nuts/mix.jpg " },
+  // PISTA (NUTS)
+  {
+    id: 18,
+    name: "PLAIN RAW PISTACHIO",
+    basePrice: 194,
+    description: "Plain raw pista",
+    image: "/images/nuts/plain_raw_pistachio.jpg",
+  },
+  {
+    id: 19,
+    name: "PISTACHIO WITHOUT SHELL",
+    basePrice: 268,
+    description: "Pistachio without shell",
+    image: "/images/nuts/pistachio_without_shell.jpg",
+  },
+  {
+    id: 20,
+    name: "PISTACHIO SALTED",
+    basePrice: 190,
+    description: "Salted pistachio",
+    image: "/images/nuts/pistachio_salted.jpg",
+  },
+  {
+    id: 21,
+    name: "PISTACHIO LEMON",
+    basePrice: 190,
+    description: "Lemon flavored pistachio",
+    image: "/images/nuts/pistachio_lemon.jpg",
+  },
+  {
+    id: 22,
+    name: "PISTACHIO MIX",
+    basePrice: 190,
+    description: "Mixed pistachio nuts",
+    image: PistaImg,
+  },
 
-  // Almond
-  { id: 23, name: "PREMIUM RAW ALMOND", basePrice: 130, description: "Premium raw almond", image: "/images/nuts/raw_almond.jpg " },
-  { id: 24, name: "USA SMALL ALMOND", basePrice: 110, description: "USA small almond", image: "/images/nuts/usa_almond.jpg " },
-  { id: 25, name: "ALMOND SALT ROASTED", basePrice: 140, description: "Salt roasted almond", image: "/images/nuts/raw_almond.jpg " },
+  // ALMOND (NUTS)
+  {
+    id: 23,
+    name: "PREMIUM RAW ALMOND",
+    basePrice: 130,
+    description: "Premium raw almond",
+    image: "/images/nuts/premium_raw_almond.jpg",
+  },
+  {
+    id: 24,
+    name: "USA SMALL ALMOND",
+    basePrice: 110,
+    description: "USA small almond",
+    image: "/images/nuts/usa_small_almond.png",
+  },
+  {
+    id: 25,
+    name: "ALMOND SALT ROASTED",
+    basePrice: 140,
+    description: "Salt roasted almond",
+    image: "/images/nuts/almond_salt_roasted.png",
+  },
 
-  // Hazel
-  { id: 26, name: "PREMIUM WHOLE HAZELNUT", basePrice: 215, description: "Premium whole hazelnut", image: "/images/nuts/hazel_nut.jpg " },
+  // (NUTS)
+  {
+    id: 26,
+    name: "PREMIUM WHOLE HAZELNUT",
+    basePrice: 215,
+    description: "Premium whole hazelnut",
+    image: "/images/nuts/premium_whole_hazelnut.png",
+  },
+  {
+    id: 27,
+    name: "WALNUT CHILLIE",
+    basePrice: 250,
+    description: "Chilli flavored walnut",
+    image: "/images/nuts/walnut_chillie.JPG",
+  },
+  {
+    id: 28,
+    name: "MACADAMIA",
+    basePrice: 210,
+    description: "Premium macadamia nuts",
+    image: "/images/nuts/macadamia.png",
+  },
+  {
+    id: 29,
+    name: "PLAIN NUTS MIX",
+    basePrice: 150,
+    description: "Plain mixed nuts",
+    image: "/images/nuts/plain_nuts_mix.jpg",
+  },
 
-  // Walnut
-  { id: 27, name: "WALNUT CHILLIE", basePrice: 250, description: "Walnut chillie", image: "/images/nuts/walnut_chillie.jpg " },
-
-  // Others / Seeds
-  { id: 28, name: "PUMPKIN SEEDS", basePrice: 75, description: "Pumpkin seeds", image: "/images/nuts/pumpkinsseeds.jpg " },
-  { id: 29, name: "SUNFLOWER SEEDS", basePrice: 50, description: "Sunflower seeds", image: "/images/nuts/sunflower_seeds.jpg " },
-  { id: 30, name: "WATERMELON SEEDS", basePrice: 124, description: "Watermelon seeds", image: "/images/nuts/watermelon_seeds.jpg " },
-  { id: 31, name: "CHIA SEEDS", basePrice: 60, description: "Chia seeds", image: "/images/nuts/chia_seed.jpg " },
-  { id: 32, name: "FLAX SEEDS", basePrice: 30, description: "Flax seeds", image: "/images/nuts/flaw_seeds.jpg " },
-  { id: 33, name: "PLAIN NUTS MIX", basePrice: 150, description: "Plain nuts mix", image: "/images/nuts/plain_nuts_mix.jpg " },
-  { id: 34, name: "MACADAMIA", basePrice: 210, description: "Premium macadamia nuts", image: "/images/nuts/macadamia.jpg " },
+  // SEEDS
+  {
+    id: 30,
+    name: "PUMPKIN SEEDS",
+    basePrice: 75,
+    description: "Pumpkin seeds",
+    image: "/images/nuts/pumpkin_seeds.jpg",
+  },
+  {
+    id: 31,
+    name: "SUNFLOWER SEEDS",
+    basePrice: 50,
+    description: "Sunflower seeds",
+    image: "/images/nuts/sunflower_seeds.jpg",
+  },
+  {
+    id: 32,
+    name: "WATERMELON SEEDS",
+    basePrice: 124,
+    description: "Watermelon seeds",
+    image: "/images/nuts/watermelon_seeds.jpg",
+  },
+  {
+    id: 33,
+    name: "CHIA SEEDS",
+    basePrice: 60,
+    description: "Chia seeds",
+    image: "/images/nuts/chia_seeds.jpg",
+  },
+  {
+    id: 34,
+    name: "FLAX SEEDS",
+    basePrice: 30,
+    description: "Flax seeds",
+    image: "/images/nuts/flax_seeds.jpg",
+  },
 ];
 
 const features = [
@@ -247,7 +449,7 @@ const Nuts = () => {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.1)_0%,_transparent_70%)]"></div>
                 <div className="w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500 relative z-10">
                   {product.image ? (
-                    <img src={product.image} alt={product.name} className="max-w-3/4 max-h-3/4 object-contain" />
+                    <img src={product.image} alt={product.name} className="max-w-[75%] max-h-[75%] object-contain" />
                   ) : (
                     <div className="text-8xl">🥜</div>
                   )}

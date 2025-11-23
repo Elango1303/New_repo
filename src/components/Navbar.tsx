@@ -13,6 +13,10 @@ const products = [
   { id: 6, name: "Toys", icon: "🧸", path: "/toys" },
   { id: 7, name: "Dry Fruits", icon: "🍇", path: "/dry-fruits" },
   { id: 8, name: "Chips", icon: "🍟", path: "/chips" },
+  { id: 9, name: "Spices", icon: "🌶️", path: "/spices" },
+  { id: 10, name: "Honey", icon: "🍯", path: "/honey" },
+  { id: 11, name: "Date Syrup", icon: "🥞", path: "/date-syrup" },
+  { id: 12, name: "Juices", icon: "🥤", path: "/juices" },
 ];
 
 interface NavLink {

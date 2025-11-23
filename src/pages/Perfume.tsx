@@ -35,7 +35,7 @@ const perfumeProducts: PerfumeProduct[] = [
   { id: 2, name: "CALVIN KEVIN", basePrice: 3900, description: "CALVIN KEVIN PERFUME", image: "/images/perfume/calvin_kevin.jpg"  },
   { id: 3, name: "515 CHAMP", basePrice: 5000, description: "515 CHAMP", image: "/images/perfume/hugo.jpg"  },
   { id: 4, name: "ASDAAF", basePrice: 1949, description: "ASDAAF PERFUME", image: "/images/perfume/asdaaf.jpg"  },
-  { id: 5, name: "EAU DE PARFUM", basePrice: 3500, description: "EAU DE PARFUM", image: "/images/perfume/eau de parfum.jpg"  },
+  { id: 5, name: "EAU DE PARFUM", basePrice: 3500, description: "EAU DE PARFUM", image: "/images/perfume/eau%20de%20parfum.jpg"  },
   { id: 6, name: "YARA", basePrice: 500, description: "YARA PERFUME", image: "/images/perfume/yara.jpg"  },
   { id: 7, name: "OUD MOOD", basePrice: 2499, description: "OUD MOOD", image: "/images/perfume/oud_mood.jpg"  },
   { id: 8, name: "FERRARI", basePrice: 2999, description: "FERRARI PERFUME", image: "/images/perfume/ferrari_perfume.jpg"  },
@@ -236,22 +236,20 @@ const Perfume: React.FC = () => {
               </button>
 
               <div className="aspect-square overflow-hidden bg-gradient-to-br from-purple-50 to-pink-50 dark:from-slate-700 dark:to-slate-600 relative">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.06)_0%,_transparent_70%)]"></div>
-                {product.image ? (
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 relative z-10"
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.display = "none";
-                    }}
-                  />
-                ) : null}
-                <div
-                  className="w-full h-full flex items-center justify-center text-6xl relative z-10"
-                  style={{ display: product.image ? "none" : "flex" }}
-                >
-                  🍇
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.1)_0%,_transparent_70%)]"></div>
+                <div className="w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500 relative z-10">
+                  {product.image ? (
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="max-w-[75%] max-h-[75%] object-contain"
+                      onError={(e) => {
+                        (e.currentTarget as HTMLImageElement).style.display = "none";
+                      }}
+                    />
+                  ) : (
+                    <div className="text-8xl">🍇</div>
+                  )}
                 </div>
               </div>
 

@@ -13,6 +13,10 @@ import Dates from "./pages/Dates";
 import NotFound from "./pages/NotFound";
 import DryFruits from "./pages/DryFruits";
 import Chips from "./pages/Chips";
+import Spices from "./pages/Spices";
+import Honey from "./pages/Honey";
+import DateSyrup from "./pages/DateSyrup";
+import Juices from "./pages/Juices";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +36,10 @@ const App = () => (
           <Route path="/dates" element={<Dates />} />
           <Route path="/chips" element={<Chips />} />
           <Route path="/dry-fruits" element={<DryFruits />} />
+          <Route path="/spices" element={<Spices />} />
+          <Route path="/honey" element={<Honey />} />
+          <Route path="/date-syrup" element={<DateSyrup />} />
+          <Route path="/juices" element={<Juices />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

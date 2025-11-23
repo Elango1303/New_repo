@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Package, Truck, Shield, Award, ChevronRight, Phone, Plus, Minus } from "lucide-react";
+import { Heart, Package, Truck, Shield, Award, ChevronRight, Phone, Plus, Minus, Sparkles, Apple } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ChocolateImg from "../assets/chocolate.jpg";
@@ -44,7 +44,7 @@ const chocolateProducts: ChocolateProduct[] = [
   { id: 25, name: "LOVE CANDY", basePrice: 25, description: "Love Candy", image: "/images/chocolate/tiffany_deluxe.jpg", priceType: "gram" },
   { id: 26, name: "LADIO DATES CHOCOLATE", basePrice: 120, description: "Ladio Dates Chocolate", image: "/images/chocolate/ladiodates.jpg", priceType: "gram" },
   { id: 27, name: "SALSA DARK DATES CHOCOLATE", basePrice: 110, description: "Salsa Dark Dates Chocolate", image:"/images/chocolate/salsadark.jpg", priceType: "gram" },
-  { id: 28, name: "SALSA YELLOW BROWN DATES CHOCOLATE", basePrice: 110, description: "Salsa Yellow Brown Dates", image: "/images/chocolate/yellowbrown dates.jpg", priceType: "gram" },
+  { id: 28, name: "SALSA YELLOW BROWN DATES CHOCOLATE", basePrice: 110, description: "Salsa Yellow Brown Dates", image: "/images/chocolate/yellowbrown%20dates.jpg", priceType: "gram" },
   { id: 29, name: "SALSA YELLOW DATES CHOCOLATE", basePrice: 110, description: "Salsa Yellow Dates", image: "/images/chocolate/yellowdates.jpg", priceType: "gram" },
   { id: 30, name: "SALSA GOLD DATES CHOCOLATE", basePrice: 110, description: "Salsa Gold Dates", image: "/images/chocolate/salsagold.jpg", priceType: "gram" },
   { id: 31, name: "SALSA WHITE DATES CHOCOLATE", basePrice: 110, description: "Salsa White Dates", image: "/images/chocolate/salsawhite.jpg", priceType: "gram" },
@@ -109,9 +109,9 @@ const chocolateProducts: ChocolateProduct[] = [
   { id: 88, name: "HISS CRISPY WAFER", basePrice: 25, description: "Crispy Wafer 21g", image:"/images/coco/crispywafer.jpg", priceType: "quantity" },
   { id: 89, name: "MALTESERS", basePrice: 140, description: "Maltesers 37g", image: "/images/raphotos/maltesers.jpg", priceType: "quantity" },
   { id: 90, name: "LOACKER CLASIC NAPOLITANER", basePrice: 130, description: "Loacker 45g", image:"/images/raphotos/loacker_bar.jpg", priceType: "quantity" },
-  { id: 91, name: "M&M CRISPY", basePrice: 130, description: "M&M Crispy 36g", image: "/images/raphotos/M&m_chocolate.jpg", priceType: "quantity" },
-  { id: 92, name: "M&M PEANUT", basePrice: 130, description: "M&M Peanut 45g", image: "/images/raphotos/m&m_yellow.jpg", priceType: "quantity" },
-  { id: 93, name: "M&M CHOCOLATE", basePrice: 130, description: "M&M Chocolate 45g", image: "/images/raphotos/m&m_chocolate_dark.jpg", priceType: "quantity" },
+  { id: 91, name: "M&M CRISPY", basePrice: 130, description: "M&M Crispy 36g", image: "/images/raphotos/M%26m_chocolate.jpg", priceType: "quantity" },
+  { id: 92, name: "M&M PEANUT", basePrice: 130, description: "M&M Peanut 45g", image: "/images/raphotos/m%26m_yellow.jpg", priceType: "quantity" },
+  { id: 93, name: "M&M CHOCOLATE", basePrice: 130, description: "M&M Chocolate 45g", image: "/images/raphotos/m%26m_chocolate_dark.jpg", priceType: "quantity" },
   { id: 94, name: "MILKA OREO", basePrice: 249, description: "Milka Oreo 90g", image: "/images/raphotos/milka_oreo.jpg", priceType: "quantity" },
   { id: 95, name: "MILKA STRAWBERRY", basePrice: 240, description: "Milka Strawberry 90g", image: "/images/raphotos/milka_straw.jpg", priceType: "quantity" },
   { id: 96, name: "MILKA ALPINE MILK", basePrice: 240, description: "Milka Alpine 98g", image: "/images/raphotos/milka1.jpg", priceType: "quantity" },
@@ -147,6 +147,12 @@ const features = [
   { icon: Truck, title: "Fast Delivery", description: "Delivered fresh to your doorstep" },
   { icon: Shield, title: "100% Authentic", description: "Guaranteed original products" },
   { icon: Award, title: "Award Winning", description: "Recognized for excellence" },
+];
+
+const benefits = [
+  { icon: Sparkles, title: "Rich Flavor", description: "Indulgent taste experience" },
+  { icon: Apple, title: "Premium Ingredients", description: "Finest quality cocoa" },
+  { icon: Heart, title: "Perfect Gift", description: "Ideal for any occasion" },
 ];
 
 const Chocolate = () => {
@@ -278,13 +284,48 @@ const Chocolate = () => {
         </div>
       </section>
 
+      {/* Benefits Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-700">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-amber-900 to-orange-900 dark:from-amber-400 dark:to-orange-400 bg-clip-text text-transparent">
+              Why Choose Our Chocolates?
+            </h2>
+            <p className="text-slate-600 dark:text-slate-400">
+              Indulge in premium quality and rich flavors
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {benefits.map((benefit, index) => {
+              const Icon = benefit.icon;
+              return (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-slate-800 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 rounded-full p-4 w-fit mx-auto mb-4">
+                    <Icon className="h-8 w-8 text-amber-600 dark:text-amber-400" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2 text-slate-900 dark:text-white">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">
+                    {benefit.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Products Gallery */}
       <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-amber-900 to-orange-900 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-amber-900 to-orange-900 dark:from-amber-400 dark:to-orange-400 bg-clip-text text-transparent">
             Our Chocolate Collection
           </h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             Discover our curated selection of premium chocolates, each crafted with love and the finest ingredients
           </p>
         </div>
@@ -306,12 +347,15 @@ const Chocolate = () => {
                 />
               </button>
 
-              <div className="aspect-square overflow-hidden bg-gradient-to-br from-amber-50 to-orange-50 relative flex items-center justify-center">
-                {product.image ? (
-                  <img src={product.image} alt={product.name} className="max-w-3/4 max-h-3/4 object-contain group-hover:scale-110 transition-transform duration-500" />
-                ) : (
-                  <div className="text-8xl">🍫</div>
-                )}
+              <div className="aspect-square overflow-hidden bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-700 dark:to-slate-600 relative">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.1)_0%,_transparent_70%)]"></div>
+                <div className="w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500 relative z-10">
+                  {product.image ? (
+                    <img src={product.image} alt={product.name} className="max-w-[75%] max-h-[75%] object-contain" />
+                  ) : (
+                    <div className="text-8xl">🍫</div>
+                  )}
+                </div>
               </div>
 
               <CardContent className="p-5">

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Star, Truck, Shield, Award, ChevronRight, Phone, Plus, Minus, Gift } from "lucide-react";
+import { Heart, Star, Truck, Shield, Award, ChevronRight, Phone, Plus, Minus, Gift, Sparkles, UtensilsCrossed } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MixedImg from "@/assets/mixed.png";
@@ -27,13 +27,20 @@ const chipsProducts: ChipProduct[] = [
   { id: 8, name: "MEXICAN", basePrice: 39, description: "Mexican spicy mix", image: "/images/chips/mexican.jpg" },
   { id: 9, name: "MASALA", basePrice: 36, description: "Indian masala chips", image:"/images/chips/masalachips.jpg" },
   { id: 10, name: "PLAIN SALT", basePrice: 30, description: "Plain salted chips", image: "/images/chips/plainsalt.jpg" },
-   { id: 1, name: "OMAN CHIPS", basePrice: 35, description: "OMAN  chips", image: "/images/omanchip.jpg" },
-    ];
+  { id: 11, name: "OMAN CHIPS", basePrice: 35, description: "OMAN chips", image: "/images/omanchip.jpg" },
+];
 
 const features = [
   { icon: Truck, title: "Fresh Stock", description: "Regularly replenished for crunch" },
   { icon: Shield, title: "Quality", description: "Sourced from trusted brands" },
   { icon: Award, title: "Tasty Varieties", description: "Flavors for every mood" },
+  { icon: Star, title: "Premium Selection", description: "Best quality chips" },
+];
+
+const benefits = [
+  { icon: Sparkles, title: "Perfect Snack", description: "Ideal for any occasion" },
+  { icon: UtensilsCrossed, title: "Great Taste", description: "Delicious flavors" },
+  { icon: Gift, title: "Party Favorite", description: "Perfect for gatherings" },
 ];
 
 const Chips = () => {
@@ -144,8 +151,51 @@ const Chips = () => {
         </div>
       </section>
 
-      {/* Products Grid */}
-      <section className="py-12 px-4 max-w-7xl mx-auto">
+      {/* Benefits Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-yellow-50 to-amber-50 dark:from-slate-800 dark:to-slate-700">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-yellow-900 to-amber-900 dark:from-yellow-400 dark:to-amber-400 bg-clip-text text-transparent">
+              Why Choose Our Chips?
+            </h2>
+            <p className="text-slate-600 dark:text-slate-400">
+              Perfect snacks for every moment
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {benefits.map((benefit, index) => {
+              const Icon = benefit.icon;
+              return (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-slate-800 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="bg-gradient-to-br from-yellow-100 to-amber-100 dark:from-yellow-900/30 dark:to-amber-900/30 rounded-full p-4 w-fit mx-auto mb-4">
+                    <Icon className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2 text-slate-900 dark:text-white">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">
+                    {benefit.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Products Gallery */}
+      <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-yellow-900 to-amber-900 dark:from-yellow-400 dark:to-amber-400 bg-clip-text text-transparent">
+            Premium Chips Collection
+          </h2>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            Handpicked selection of the finest chips from trusted brands
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {chipsProducts.map((product) => (
             <Card key={product.id} className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-amber-200 relative">
@@ -156,12 +206,15 @@ const Chips = () => {
                 <Heart className={`h-5 w-5 ${favorites.has(product.id) ? 'fill-red-500 text-red-500' : 'text-slate-400'}`} />
               </button>
 
-              <div className="aspect-square overflow-hidden bg-gradient-to-br from-amber-50 to-yellow-50 relative flex items-center justify-center">
-                {product.image ? (
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
-                ) : (
-                  <div className="text-8xl">🍟</div>
-                )}
+              <div className="aspect-square overflow-hidden bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-slate-700 dark:to-slate-600 relative">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.1)_0%,_transparent_70%)]"></div>
+                <div className="w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500 relative z-10">
+                  {product.image ? (
+                    <img src={product.image} alt={product.name} className="max-w-[75%] max-h-[75%] object-contain" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
+                  ) : (
+                    <div className="text-8xl">🍟</div>
+                  )}
+                </div>
               </div>
 
               <CardContent className="p-5">
@@ -209,6 +262,29 @@ const Chips = () => {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 rounded-3xl p-12 text-center text-white shadow-2xl relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjEiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30"></div>
+            <div className="relative z-10">
+              <Gift className="h-16 w-16 mx-auto mb-4 text-yellow-100" />
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                Stock Up & Save
+              </h2>
+              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Subscribe to our monthly chip box and get fresh snacks delivered to your doorstep
+              </p>
+              <Button 
+                size="lg"
+                className="bg-white text-yellow-900 hover:bg-yellow-50 shadow-xl rounded-full px-8 text-lg font-semibold"
+              >
+                Subscribe & Save 20%
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );
