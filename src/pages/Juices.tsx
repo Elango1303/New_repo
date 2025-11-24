@@ -14,140 +14,17 @@ interface Product {
   image?: string;
 }
 
-const juiceProducts: Product[] = [
-  // MOGU MOGU
-  {
-    id: 1,
-    name: "MOGU MOGU MELON",
-    price: 70,
-    size: "320ml",
-    description: "Melon juice drink with nata de coco",
-    image: "/images/juices/mogu_mogu_melon.jpg",
-  },
-  {
-    id: 2,
-    name: "MOGU MOGU ORANGE",
-    price: 70,
-    size: "320ml",
-    description: "Orange juice drink with nata de coco",
-    image: "/images/juices/mogu_mogu_orange.jpg",
-  },
-  {
-    id: 3,
-    name: "MOGU MOGU APPLE",
-    price: 70,
-    size: "320ml",
-    description: "Apple juice drink with nata de coco",
-    image: "/images/juices/mogu_mogu_apple.png",
-  },
-  {
-    id: 4,
-    name: "MOGU MOGU GRAPES",
-    price: 70,
-    size: "320ml",
-    description: "Grape juice drink with nata de coco",
-    image: "/images/juices/mogu_mogu_grapes.jpg",
-  },
-  {
-    id: 5,
-    name: "MOGU MOGU STRAWBERRY",
-    price: 70,
-    size: "320ml",
-    description: "Strawberry juice drink with nata de coco",
-    image: "/images/juices/mogu_mogu_strawberry.jpg",
-  },
-  // FRESA FRESHER
-  {
-    id: 6,
-    name: "FRESA FRESHER LEMON",
-    price: 90,
-    size: "250ml",
-    description: "Sparkling lemon drink",
-    image: "/images/juices/fresa_fresher_lemon.png",
-  },
-  {
-    id: 7,
-    name: "FRESA FRESHER WATERMELON & STRAWBERRY",
-    price: 90,
-    size: "250ml",
-    description: "Watermelon and strawberry drink",
-    image: "/images/juices/fresa_fresher_watermelon_strawberry.png",
-  },
-  // RANI / COLA WITH DATES EXTRACT etc. (tins)
-  {
-    id: 8,
-    name: "COLA WITH DATES EXTRACT",
-    price: 120,
-    size: "240ml",
-    description: "Cola drink with dates extract",
-    image: "/images/juices/cola_dates_extract.jpg",
-  },
-  {
-    id: 9,
-    name: "RANI FLOAT PEACH",
-    price: 120,
-    size: "240ml",
-    description: "Peach juice drink with real fruit pieces",
-    image: "/images/juices/rani_float_peach.png",
-  },
-  {
-    id: 10,
-    name: "RANI FLOAT GUAVA",
-    price: 120,
-    size: "240ml",
-    description: "Guava juice drink with real fruit pieces",
-    image: "/images/juices/rani_float_guava.jpg",
-  },
-  {
-    id: 11,
-    name: "RANI FLOAT MANGO",
-    price: 120,
-    size: "240ml",
-    description: "Mango juice drink with real fruit pieces",
-    image: "/images/juices/rani_float_mango.png",
-  },
-  {
-    id: 12,
-    name: "RANI FLOAT PINEAPPLE",
-    price: 120,
-    size: "240ml",
-    description: "Pineapple juice drink with real fruit pieces",
-    image: "/images/juices/rani_float_pineapple.png",
-  },
-  {
-    id: 13,
-    name: "RANI FLOAT STRAWBERRY BANANA",
-    price: 120,
-    size: "240ml",
-    description: "Strawberry banana juice drink with real fruit pieces",
-    image: "/images/juices/rani_float_strawberry_banana.png",
-  },
-  {
-    id: 14,
-    name: "RANI FLOAT ORANGE",
-    price: 120,
-    size: "240ml",
-    description: "Orange juice drink with real fruit pieces",
-    image: "/images/juices/rani_float_orange.jpg",
-  },
-  // REDBULL / ENERGY DRINKS (subset)
-  {
-    id: 15,
-    name: "REDBULL ENERGY DRINK",
-    price: 299,
-    size: "250ml",
-    description: "Classic Red Bull energy drink",
-    image: "/images/juices/redbull_energy_drink.jpg",
-  },
-  {
-    id: 16,
-    name: "MONSTER ENERGY",
-    price: 125,
-    size: "350ml",
-    description: "Monster energy drink",
-    image: "/images/juices/monster_energy.jpg",
-  },
-];
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const juiceProductsRaw = getProductsByCategory("juices");
+const juiceProducts = juiceProductsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  price: Number(product.price),
+  size: product.weight || "",
+  description: product.weight || "",
+  image: getImagePath(product),
+}));
 
 const features = [
   { icon: Leaf, title: "100% Natural", description: "Real fruit juices" },

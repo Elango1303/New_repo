@@ -30,34 +30,18 @@ type PerfumeProduct = {
   image?: string;
 };
 
-const perfumeProducts: PerfumeProduct[] = [
-  { id: 1, name: "HUGO", basePrice: 4000, description: "HUGO", image: "/images/perfume/hugo.jpg" },
-  { id: 2, name: "CALVIN KEVIN", basePrice: 3900, description: "CALVIN KEVIN PERFUME", image: "/images/perfume/calvin_kevin.jpg"  },
-  { id: 3, name: "515 CHAMP", basePrice: 5000, description: "515 CHAMP", image: "/images/perfume/hugo.jpg"  },
-  { id: 4, name: "ASDAAF", basePrice: 1949, description: "ASDAAF PERFUME", image: "/images/perfume/asdaaf.jpg"  },
-  { id: 5, name: "EAU DE PARFUM", basePrice: 3500, description: "EAU DE PARFUM", image: "/images/perfume/eau%20de%20parfum.jpg"  },
-  { id: 6, name: "YARA", basePrice: 500, description: "YARA PERFUME", image: "/images/perfume/yara.jpg"  },
-  { id: 7, name: "OUD MOOD", basePrice: 2499, description: "OUD MOOD", image: "/images/perfume/oud_mood.jpg"  },
-  { id: 8, name: "FERRARI", basePrice: 2999, description: "FERRARI PERFUME", image: "/images/perfume/ferrari_perfume.jpg"  },
-  { id: 9, name: "BURBERRY", basePrice: 8450, description: "BURBERRY PERFUME", image: "/images/perfume/burberry.jpg"  },
-  { id: 10, name: "MIDNIGHT BLUE", basePrice: 2000, description: "MIDNIGHT PERFUME", image: "/images/perfume/midnightblue.jpg"  },
-  { id: 11, name: "SHAGHUF", basePrice: 2000, description: "SHAGHUF PERFUME", image: "/images/perfume/shaghuf.jpg"  },
-  { id: 12, name: "SEMI WASHWASHAH", basePrice: 3400, description: "SEMI WASHWASHAH PERFUME", image: "/images/perfume/wash.jpg"  },
-  // New perfumes
-  { id: 13, name: "CK ONE SHOCK FOR HIM", basePrice: 3999, description: "200ml", image: "/images/perfume/ck_one_shock_him_200ml.jpg" },
-  { id: 14, name: "CK ONE SHOCK FOR HIM", basePrice: 3299, description: "100ml", image: "/images/perfume/ck_one_shock_him_100ml.jpg" },
-  { id: 15, name: "CK ONE SHOCK FOR HER", basePrice: 4499, description: "200ml", image: "/images/perfume/ck_one_shock_her_200ml.jpg" },
-  { id: 16, name: "CK ONE SHOCK FOR HER", basePrice: 2699, description: "100ml", image: "/images/perfume/ck_one_shock_her_100ml.jpg" },
-  { id: 17, name: "CK BE", basePrice: 3899, description: "100ml", image: "/images/perfume/ck_be_100ml.jpg" },
-  { id: 18, name: "CKIN2U HER", basePrice: 3499, description: "100ml", image: "/images/perfume/ckin2u_her_100ml.jpg" },
-  { id: 19, name: "CKIN2U HIM", basePrice: 3499, description: "100ml", image: "/images/perfume/ckin2u_him_100ml.jpg" },
-  { id: 20, name: "CK ESCAPE FOR MEN", basePrice: 2499, description: "100ml", image: "/images/perfume/ck_escape_men_100ml.jpg" },
-  { id: 21, name: "CK ONE", basePrice: 4649, description: "100ml", image: "/images/perfume/ck_one_100ml.jpg" },
-  { id: 22, name: "CK MAN", basePrice: 2399, description: "100ml", image: "/images/perfume/ck_man_100ml.jpg" },
-  { id: 23, name: "DAVID OFF CHAMPION", basePrice: 3249, description: "90ml", image: "/images/perfume/davidoff_champion_90ml.jpg" },
-  { id: 24, name: "DAVID OFF THE GAME", basePrice: 3999, description: "100ml", image: "/images/perfume/davidoff_game_100ml.jpg" },
-  { id: 25, name: "DAVID OFF COOL WATER", basePrice: 3499, description: "125ml", image: "/images/perfume/davidoff_cool_water_125ml.jpg" },
-  { id: 26, name: "DAVID OFF HOT WATER", basePrice: 2799, description: "110ml", image: "/images/perfume/davidoff_hot_water_110ml.jpg" },
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const perfumeProductsRaw = getProductsByCategory("perfume");
+const perfumeProducts = perfumeProductsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  basePrice: Number(product.price),
+  description: product.weight || "",
+  image: getImagePath(product),
+})) || [];
+
+const _UNUSED_PLACEHOLDER = [
   { id: 27, name: "DUNHILL GOLD", basePrice: 4099, description: "100ml", image: "/images/perfume/dunhill_gold_100ml.jpg" },
   { id: 28, name: "HUGO BOSS MAN", basePrice: 5799, description: "200ml", image: "/images/perfume/hugo_boss_man_200ml.jpg" },
   { id: 29, name: "HUGO BOSS MAN", basePrice: 3999, description: "125ml", image: "/images/perfume/hugo_boss_man_125ml.jpg" },

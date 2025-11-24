@@ -15,38 +15,18 @@ type Product = {
   image: string;
 };
 
-const dryFruits: Product[] = [
-  // Dates (use public images: /images/dryfruits/{id}.jpg)
- 
-  // Dry Fruits
-  { id: 14, name: "DRY FIG MEDIUM", basePrice: 260, description: "Dry Fig Medium", category: "Dry Fruits", image: "/images/dry_fruits/dry_fig_fruit.jpg" },
-  { id: 15, name: "DRY FIG FRUIT", basePrice: 270, description: "Dry Fig Fruit", category: "Dry Fruits", image: "/images/dry_fruits/dry_fig_medium.jpg" },
-  { id: 16, name: "GOLDEN RAISINS", basePrice: 130, description: "Golden Raisins", category: "Dry Fruits", image: "/images/dry_fruits/Golden_raisins.jpg" },
-  { id: 17, name: "MONAKKA RAISINS", basePrice: 120, description: "Monakka Raisins", category: "Dry Fruits", image: "/images/dry_fruits/manakka_rasins.jpg" },
-  { id: 18, name: "GOLDEN RAISINS JUMBO", basePrice: 145, description: "Golden Raisins Jumbo", category: "Dry Fruits", image:"/images/dry_fruits/Golden_raisins.jpg" },
-  { id: 19, name: "RAISINS BLACK", basePrice: 70, description: "Raisins Black", category: "Dry Fruits", image: "/images/dry_fruits/Raisins_black.jpg" },
-  { id: 20, name: "DRY FRUITS MIX DICE", basePrice: 130, description: "Dry Fruits Mix Dice", category: "Dry Fruits", image:"/images/dry_fruits/dry_fruit_mixdice.jpg" },
-  { id: 21, name: "DRY FRUITS PINEAPPLE", basePrice: 130, description: "Dry Fruits Pineapple", category: "Dry Fruits", image: "/images/dry_fruits/dry_frutit_pineapplejpg.jpg"},
-  { id: 22, name: "DRY FRUITS MANGO", basePrice: 130, description: "Dry Fruits Mango", category: "Dry Fruits", image: "/images/dry_fruits/dry_fruit_mango.jpg"},
-  { id: 23, name: "DRY FRUITS MIX SLICE", basePrice: 130, description: "Dry Fruits Mix Slice", category: "Dry Fruits", image: "/images/dry_fruits/mix_slice.jpg" },
-  { id: 24, name: "DRY FRUITS PAPAYA", basePrice: 130, description: "Dry Fruits Papaya", category: "Dry Fruits", image: "/images/dry_fruits/dry_fruit_papaya.jpg" },
-  { id: 25, name: "DRY FRUITS CANTALOUPE", basePrice: 130, description: "Dry Fruits Cantaloupe", category: "Dry Fruits", image: "/images/dry_fruits/cantaloupe.jpg" },
-  { id: 26, name: "DRY FRUITS POMELO", basePrice: 130, description: "Dry Fruits Pomelo", category: "Dry Fruits", image: "/images/dry_fruits/pomelo.jpg" },
-  { id: 27, name: "DRY FRUITS KIWI", basePrice: 130, description: "Dry Fruits Kiwi", category: "Dry Fruits", image: "/images/dry_fruits/kiwi.jpg" },
-  { id: 28, name: "DRY FRUITS GINGER", basePrice: 130, description: "Dry Fruits Ginger", category: "Dry Fruits", image: "/images/dry_fruits/ginger.jpg" },
-  { id: 29, name: "BLUE BERRY", basePrice: 216, description: "Blue Berry", category: "Dry Fruits", image: "/images/dry_fruits/blue%20berry.jpg" },
-  { id: 30, name: "CANEBERRY", basePrice: 74, description: "Caneberry", category: "Dry Fruits", image: "/images/dry_fruits/caneberry.jpg" },
-  { id: 31, name: "DRY PLUM", basePrice: 105, description: "Dry Plum", category: "Dry Fruits", image: "/images/dry_fruits/plum.jpg" },
-  { id: 32, name: "PREMIUM DRY CHERRY", basePrice: 130, description: "Premium Dry Cherry", category: "Dry Fruits", image: "/images/dry_fruits/dry_Cherry.jpg"},
-  { id: 33, name: "SUGAR AMLA", basePrice: 40, description: "Sugar Amla", category: "Dry Fruits", image: "/images/dry_fruits/sugar_amla.jpg"},
-  { id: 34, name: "DRY CHERRIES PSEL", basePrice: 125, description: "Dry Cherries Psel", category: "Dry Fruits", image: "/images/dry_fruits/cherries_psel.jpg" },
-  // MIXED
-  { id: 35, name: "GRACE HONEY MIXED DRY FRUITS 400g", basePrice: 80, description: "Grace honey mixed dry fruits (400g)", category: "Mixed", image: "/images/dry_fruits/honey_mixed_400.jpg" },
-  { id: 36, name: "GRACE HONEY MIXED DRY FRUITS 250g", basePrice: 84, description: "Grace honey mixed dry fruits (250g)", category: "Mixed", image: "/images/dry_fruits/honey_mixed_250.jpg" },
-  { id: 37, name: "ZAZIO MIXED BERRIES", basePrice: 208, description: "Zazio mixed berries 250g", category: "Mixed", image: "/images/dry_fruits/zazio_mixed_berries.jpg" },
-  { id: 38, name: "ZAZIO MIXED NUTS", basePrice: 208, description: "Zazio mixed nuts 250g", category: "Mixed", image: "/images/dry_fruits/zazio_mixed_nuts.jpg" },
-  { id: 39, name: "DRY APRICOT POUCH", basePrice: 299, description: "Dry apricot pouch 250g", category: "Mixed", image: "/images/dry_fruits/dry_apricot_pouch.jpg" },
-];
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const dryFruitsRaw = getProductsByCategory("dry_fruits");
+const dryFruits = dryFruitsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  basePrice: Number(product.price),
+  description: product.weight || "",
+  category: product.category || "Dry Fruits",
+  emoji: product.emoji || "",
+  image: getImagePath(product),
+}));
 
 const features = [
   { icon: Leaf, title: "100% Natural", description: "No preservatives or additives" },

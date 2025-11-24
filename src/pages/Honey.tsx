@@ -13,51 +13,53 @@ interface Product {
   image?: string;
 }
 
-const honeyProducts: Product[] = [
-  {
     id: 1,
     name: "APIS HIMALAYA HONEY 500g",
     basePrice: 65,
     description: "Apis Himalaya pure honey 500g",
     image: "/images/honey/apis_himalaya_500g.jpg",
   },
-  {
     id: 2,
     name: "WAYANAD PREMIUM HONEY 500g",
     basePrice: 102,
     description: "Wayanad premium pure natural honey 500g",
     image: "/images/honey/wayanad_premium_500g.jpg",
   },
-  {
     id: 3,
     name: "ROSH HONEY 500g",
     basePrice: 130,
     description: "Rosh honey 500g",
     image: "/images/honey/rosh_honey_500g.png",
   },
-  {
     id: 4,
     name: "WAYANAD PREMIUM HONEY 240g",
     basePrice: 108,
     description: "Wayanad premium natural honey 240g",
     image: "/images/honey/wayanad_premium_500g.jpg",
   },
-  {
     id: 5,
     name: "APIS HIMALAYA HONEY 225g",
     basePrice: 73,
     description: "Apis Himalaya honey 225g",
     image: "/images/honey/apis_himalaya_225g.jpg",
   },
-  {
     id: 6,
     name: "WAYANAD PREMIUM HONEY 140g",
     basePrice: 114,
     description: "Wayanad premium honey 140g",
     image: "/images/honey/wayanad_premium_500g.jpg",
   },
-  {
     id: 7,
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const honeyProductsRaw = getProductsByCategory("honey");
+const honeyProducts = honeyProductsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  basePrice: Number(product.price),
+  description: product.weight || "",
+  image: getImagePath(product),
+}));
     name: "BGOOD WESTERN GHATS HONEY 120g",
     basePrice: 67,
     description: "Bgood Western Ghats heritage honey 120g",

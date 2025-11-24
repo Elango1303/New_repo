@@ -1,0 +1,1706 @@
+[
+  {
+    "name": "PARTICULARS",
+    "price": "PCS RATE",
+    "weight": "GRAM",
+    "image_url": "IMAGE ADRESS"
+  },
+  {
+    "name": "LOTUS KUNAFA SMALL",
+    "price": "50",
+    "weight": "",
+    "image_url": "https://down-my.img.susercontent.com/file/my-11134207-7rasa-m3g8nnks4rjw8b"
+  },
+  {
+    "name": "ARABIAN TREATZ KUNAFA PISTACHIO",
+    "price": "600",
+    "weight": "100g",
+    "image_url": "https://cdn.greatdeals.com.sg/wp-content/uploads/2025/02/25170650/kunafa-pistachio-chocolate-7-eleven-singapore-900x473.jpg"
+  },
+  {
+    "name": "MILLENNIUM DARK CHOCOLATE 99%",
+    "price": "600",
+    "weight": "100g",
+    "image_url": "http://tabib-jo.com/storage/products-images/5902574395788/16939349592w.jpg"
+  },
+  {
+    "name": "MILLENNIUM BRUT DARK CHOCOLATE 74%",
+    "price": "600",
+    "weight": "100g",
+    "image_url": "https://millennium-trade.com/image/cache/catalog/products/13_MILL_FAVORITE_brut74-470x310.jpg"
+  },
+  {
+    "name": "LINDT DARK CHOCOLATE 70%",
+    "price": "600",
+    "weight": "100g",
+    "image_url": "https://contenthandler-raleys.fieldera.com/prod/94038/1/0/0/480063177-Hero.jpg"
+  },
+  {
+    "name": "GALAXY DARK CHOCOLATE",
+    "price": "130",
+    "weight": "36g",
+    "image_url": "https://www.sharjahcoop.ae/medias/6294001815259-1200Wx1200H-001.jpg?context=bWFzdGVyfHNjc3w0Njc2MjR8aW1hZ2UvanBlZ3xzY3MvaDYyL2gyNC84ODYzMjUzOTIxODIyLmpwZ3wxNGU4MWFmN2QyMzQ3ODViMTE5MGEzNDdlNzRjODY4MWFiMDc0YWZiYmUzZWE0M2E3ZmUyM2MwMzc3NGExMzBk"
+  },
+  {
+    "name": "GALAXY SMOOTH WHITE",
+    "price": "130",
+    "weight": "38g",
+    "image_url": "https://cfn-catalog-prod.tradeling.com/up/65f5481bb07c4500f07d290e/67caf1e0c9acb5840bdc3fc1a399a6ab.jpg"
+  },
+  {
+    "name": "FIDJI CAPPUCCINO",
+    "price": "320",
+    "weight": "90g",
+    "image_url": "https://i.ytimg.com/vi/EJQsGIy5ok0/maxresdefault.jpg"
+  },
+  {
+    "name": "KIT KAT DARK CHOCOLATE",
+    "price": "220",
+    "weight": "150g",
+    "image_url": "https://m.media-amazon.com/images/I/81cxxRUfOXL._SL1500_.jpg"
+  },
+  {
+    "name": "MINIS",
+    "price": "1299",
+    "weight": "500g",
+    "image_url": "https://m.media-amazon.com/images/I/61zqGQoqCrL._AC_SL1178_.jpg"
+  },
+  {
+    "name": "DIGESTIVE ORIGINAL 400g",
+    "price": "349",
+    "weight": "400g",
+    "image_url": "https://i0.wp.com/nextcashandcarry.com.ng/wp-content/uploads/2023/05/MCVITIES-DIGESTIVE-D-ORIGINAL-400G.jpg?fit=1000%2C1000&ssl=1"
+  },
+  {
+    "name": "SNICKERS 11.5G",
+    "price": "10",
+    "weight": "11.5g",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2023/11/363633849/WW/SV/SQ/199268574/snickers-trio-112-5g-in-bulk-1000x1000.jpg"
+  },
+  {
+    "name": "SNICKERS 20G",
+    "price": "20",
+    "weight": "20g",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2025/5/511921325/CS/TB/OO/97508240/20g-snickers-peanut-filled-chocolate-bar-500x500.png"
+  },
+  {
+    "name": "GO FRESH",
+    "price": "30",
+    "weight": "20g",
+    "image_url": "https://doddys.lk/wp-content/uploads/2022/11/Go-fresh-x1-01.jpg"
+  },
+  {
+    "name": "SNICKERS 50G",
+    "price": "70",
+    "weight": "50g",
+    "image_url": "https://www.mashed.com/img/gallery/snickers-just-launched-a-brand-new-high-protein-bar/l-intro-1670959713.jpg"
+  },
+  {
+    "name": "TWIX",
+    "price": "70",
+    "weight": "50g",
+    "image_url": "https://www.twix.com/sites/g/files/fnmzdf236/files/migrate-product-files/pm57alsea7mspqhhgfuf.png"
+  },
+  {
+    "name": "SNICKERS 40G",
+    "price": "50",
+    "weight": "40g",
+    "image_url": "https://i0.wp.com/treatsnstuff.com/wp-content/uploads/2023/01/Snickers-20G-1.jpg?fit=800%2C800&ssl=1"
+  },
+  {
+    "name": "KIT KAT 4PCS",
+    "price": "90",
+    "weight": "41.5g",
+    "image_url": "https://media.naheed.pk/catalog/product/cache/2f2d0cb0c5f92580479e8350be94f387/1/0/1030270-rpl-1.jpg"
+  },
+  {
+    "name": "MARS",
+    "price": "90",
+    "weight": "20g",
+    "image_url": "https://i.pinimg.com/originals/70/44/ac/7044ac23550efa34f0c562ea9f41e198.png"
+  },
+  {
+    "name": "SNICKERS CARAMEL",
+    "price": "145",
+    "weight": "42g",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/41+B9T2lgkL._SL500_._AC_SL500_.jpg"
+  },
+  {
+    "name": "KIT KAT 8PCS PACK",
+    "price": "400",
+    "weight": "141.6g",
+    "image_url": "https://osfor.com.tr/wp-content/uploads/2020/12/KIT-KAT-20.7G-ORIGINAL8PCS.jpg"
+  },
+  {
+    "name": "SNICKERS 5PCS PACK",
+    "price": "250",
+    "weight": "115g",
+    "image_url": "https://cdn.mafrservices.com/pim-content/UAE/media/product/2249151/1753128604/2249151_main.jpg?im=Resize=400"
+  },
+  {
+    "name": "HOT FIRE SOFFTY",
+    "price": "149",
+    "weight": "120g",
+    "image_url": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/06/1200/675/roasting-marshmallow.jpg?ve=1&tl=1"
+  },
+  {
+    "name": "HUBBA BUBBA SNAPPY STRAWBERRY",
+    "price": "199",
+    "weight": "56g",
+    "image_url": "https://creativesweets.co.za/wp-content/uploads/2022/05/Hubba-Bubba-Strawberry.jpg"
+  },
+  {
+    "name": "HUBBA BUBBA FANCY FRUIT",
+    "price": "199",
+    "weight": "56g",
+    "image_url": "https://www.koratchef.com/wp-content/uploads/2025/02/Hubba-Bubba-Fancy-Fruit-Bubblegum-Mega-Long-56g.png"
+  },
+  {
+    "name": "BATOOK SPECIAL MINT",
+    "price": "15",
+    "weight": "12.5g",
+    "image_url": "https://supersavings.lk/wp-content/uploads/2023/05/batook-special-mint.jpg"
+  },
+  {
+    "name": "BATOOK BANANA",
+    "price": "15",
+    "weight": "12.5g",
+    "image_url": "https://m.media-amazon.com/images/I/51TkWNsDO7L._SL1200_.jpg"
+  },
+  {
+    "name": "BATOOK CARDAMOM",
+    "price": "15",
+    "weight": "12.5g",
+    "image_url": "https://cdn.mafrservices.com/sys-master-root/h2b/h2b/9277803855902/207630_main.jpg?im=Resize=480"
+  },
+  {
+    "name": "BATOOK GRAPES",
+    "price": "15",
+    "weight": "12.5g",
+    "image_url": "http://www.batook.com/wp-content/uploads/2021/05/B-GRAPE1.png"
+  },
+  {
+    "name": "IMPACT MINTS PINEAPPLE",
+    "price": "149",
+    "weight": "14g",
+    "image_url": "https://impactmints.in/cdn/shop/files/Pineapple.jpg?v=1698321831&width=1946"
+  },
+  {
+    "name": "IMPACT MINTS PEACH",
+    "price": "149",
+    "weight": "14g",
+    "image_url": "http://impactmints.in/cdn/shop/files/Peach.jpg?v=1698321686"
+  },
+  {
+    "name": "IMPACT MINTS STRAWBERRY",
+    "price": "149",
+    "weight": "14g",
+    "image_url": "https://rukminim1.flixcart.com/image/416/416/l55nekw0/candy-mouth-freshener/w/a/7/14-sugar-free-mints-strawberry-1-impact-mints-original-imagfwczsfttqqwp.jpeg?q=70"
+  },
+  {
+    "name": "MENTOS MINT",
+    "price": "25",
+    "weight": "29.7g",
+    "image_url": "https://a.allegroimg.com/original/110f91/8e44ae964c08b42fb58fa95dbe02/Mentos-Mint-cukierki-do-zucia-40x38g"
+  },
+  {
+    "name": "MENTOS RAINBOW",
+    "price": "25",
+    "weight": "29.7g",
+    "image_url": "https://mwdsnacks.com/wp-content/uploads/2020/05/527239.jpg"
+  },
+  {
+    "name": "EXTRA SPEARMINT",
+    "price": "60",
+    "weight": "14g",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/414XWcweBCL._SL500_._AC_SL500_.jpg"
+  },
+  {
+    "name": "EXTRA PEPPER MINT",
+    "price": "60",
+    "weight": "14g",
+    "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/15305df0-96f6-4e58-bb26-e88a2ecdc72c/bbe99133-bdff-4359-a80e-da7aa6ec8ce4_416057431.jpeg?h=960&w=960"
+  },
+  {
+    "name": "EXTRA WATERMELON",
+    "price": "60",
+    "weight": "14g",
+    "image_url": "https://www.wholesalesweets.co.uk/_next/image?url=https%3A%2F%2Fws-api.hancocks.co.uk%2Fmedia%2Fcatalog%2Fproduct%2F3%2F1%2F315339_b_24.jpg&w=3840&q=75"
+  },
+  {
+    "name": "EXTRA STRAWBERRY",
+    "price": "60",
+    "weight": "14g",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6waTfq-YTGm2G_5OfqPrbsNnya5irSjl5Bg&s"
+  },
+  {
+    "name": "MUNCHEE MILK BISCUIT",
+    "price": "60",
+    "weight": "200g",
+    "image_url": "https://m.media-amazon.com/images/I/612dRstUCTL.jpg_BO30,255,255,255_UF900,850_SR1910,1000,0,C_QL100_.jpg"
+  },
+  {
+    "name": "MUNCHEE MILK BISCUIT 75G",
+    "price": "20",
+    "weight": "75g",
+    "image_url": "https://quickee.com/wp-content/uploads/2022/10/MUNCHEE-MILK-SHORT-CAKE-BISCUITS-85G-1.png"
+  },
+  {
+    "name": "MUNCHEE GINGER BISCUIT",
+    "price": "20",
+    "weight": "75g",
+    "image_url": "https://shionlankafoods.com/wp-content/uploads/2024/01/IMG_9675.jpeg"
+  },
+  {
+    "name": "ASTRO COOKIES AND CREAM",
+    "price": "27",
+    "weight": "36g",
+    "image_url": "https://cdn.mafrservices.com/pim-content/UAE/media/product/2121697/1748772003/2121697_main.jpg"
+  },
+  {
+    "name": "NUTELLA BISCUIT POUCH",
+    "price": "780",
+    "weight": "276g",
+    "image_url": "https://m.media-amazon.com/images/I/71O+0LxwkJL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "FORTUNA T12 HEART",
+    "price": "300",
+    "weight": "120g",
+    "image_url": "https://dealayo.com/media/catalog/product/f/o/fortuna-chocolate-16s-heart-golden-1_1.jpg?width=265&height=265&store=default&image-type=image"
+  },
+  {
+    "name": "FORTUNA T5 PANDA",
+    "price": "160",
+    "weight": "50g",
+    "image_url": "https://cdn.sybazzar.com/public/840-840/files/C0AC92182A81E55-vtt.jpg"
+  },
+  {
+    "name": "FORTUNA T5 RABBIT",
+    "price": "210",
+    "weight": "50g",
+    "image_url": "https://image.made-in-china.com/2f0j00RtgkiLsURPca/T5-Crushed-Peanut-Wafer-Bll-Chocolate-in-Rabbit-Mould.webp"
+  },
+  {
+    "name": "KAT KAT TAT",
+    "price": "40",
+    "weight": "20g",
+    "image_url": "https://m.media-amazon.com/images/I/81ZmamJKFvL.jpg"
+  },
+  {
+    "name": "FERRERO ROCHER T16",
+    "price": "1499",
+    "weight": "200g",
+    "image_url": "https://delhidutyfree.co.in/media/catalog/product/cache/c3073cf0652b87af145d4aff9d92466d/1/5/1501066.jpg"
+  },
+  {
+    "name": "BOUNTY BAR",
+    "price": "101",
+    "weight": "57g",
+    "image_url": "https://5.imimg.com/data5/RM/LR/GB/GLADMIN-6335932/bounty-chocolate-500x500.jpg"
+  },
+  {
+    "name": "KALFANY ASSORTED FRUIT DROPS",
+    "price": "490",
+    "weight": "150g",
+    "image_url": "https://www.kalfany.de/sites/default/files/content/produkte/3d_ky-150g_assorted-fruit_300dpi.png"
+  },
+  {
+    "name": "KALFANY CITRUS FRUIT DROPS",
+    "price": "490",
+    "weight": "150g",
+    "image_url": "https://m.media-amazon.com/images/I/61Xv+4FkBlL.jpg_BO30,255,255,255_UF900,850_SR1910,1000,0,C_QL100_.jpg"
+  },
+  {
+    "name": "KALFANY STRAWBERRY DROPS",
+    "price": "490",
+    "weight": "150g",
+    "image_url": "https://www.kalfany.de/sites/default/files/content/produkte/3d_ky-150g_strawberry_300dpi.png"
+  },
+  {
+    "name": "KALFANY FRUIT SELECTION DROPS",
+    "price": "490",
+    "weight": "150g",
+    "image_url": "https://www.kalfany.de/sites/default/files/content/produkte/3d_ky-150g_fruit-selection.png"
+  },
+  {
+    "name": "KALFANY CHERRY DROPS",
+    "price": "490",
+    "weight": "150g",
+    "image_url": "https://www.heinemann-shop.com/medias/300Wx300H-null?context=bWFzdGVyfGltYWdlc3wyOTkwNXxpbWFnZS9qcGVnfGFHTTFMMmcxWmk4eE1qYzFOemN3TWpZd05qZzNPQzh6TURCWGVETXdNRWhmYm5Wc2JBfGUxMjdjYzU2YWIyZjNiMTlhZGNjNTdlNGQ1YWRkMWViZDYzNDE1MDU4NTFmYmI0OWIyNWIxNjMyZjc2NzYwN2E&v=1758227507859"
+  },
+  {
+    "name": "KALFANY COFFEE DROPS",
+    "price": "490",
+    "weight": "150g",
+    "image_url": "https://www.heinemann-shop.com/medias/527Wx527H-null?context=bWFzdGVyfGltYWdlc3w1NDIzN3xpbWFnZS9qcGVnfGFEQTFMMmd6TkM4eE1ESTFOREl6TlRreU5qVTFPQzgxTWpkWGVEVXlOMGhmYm5Wc2JBfGFiNmMyNTg1ZmY1OGQ1YjcxNWE2OTRmNzhlNzIyMTY2ODc4ZTkxODFkNzA1NjZkNTBjNDE1YzZjYWNhZTFkMTA&v=1706134884041"
+  },
+  {
+    "name": "MARSHZONE MARSHMALLOW FRIES",
+    "price": "150",
+    "weight": "",
+    "image_url": "https://americanfizz.co.uk/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/w/h/whatsapp_image_2025-08-01_at_14.36.59_e856a486.jpg"
+  },
+  {
+    "name": "COCON PUDDING",
+    "price": "230",
+    "weight": "480g",
+    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/6a43871d-5de6-4bc6-881d-b2e455395453.jpg"
+  },
+  {
+    "name": "TWIN BURGER",
+    "price": "25",
+    "weight": "14g",
+    "image_url": "https://dealzdxb.com/wp-content/uploads/2025/03/250g-2025-03-23T183111.636.png"
+  },
+  {
+    "name": "GUMMI PIZZA",
+    "price": "28",
+    "weight": "14g",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/40123507_1-yupi-gummi-pizza.jpg"
+  },
+  {
+    "name": "GUMMI PIZZA PACKET",
+    "price": "220",
+    "weight": "96g",
+    "image_url": "https://images-cdn.ubuy.co.in/6351b64ff6b13c56236ccbe5-yupi-brand-jelly-gummi-pizza-64g-x-2.jpg"
+  },
+  {
+    "name": "KINDER CARDS 76G",
+    "price": "500",
+    "weight": "76g",
+    "image_url": "https://cococart.in/cdn/shop/files/1CH1819.png?v=1685097555"
+  },
+  {
+    "name": "KINDER CARDS 256 G",
+    "price": "1099",
+    "weight": "256g",
+    "image_url": "https://m.media-amazon.com/images/I/61xf7XxFKfL.jpg"
+  },
+  {
+    "name": "KINDER CHOCOLATE",
+    "price": "25",
+    "weight": "14g",
+    "image_url": "https://m.media-amazon.com/images/I/61WsguXrxML.jpg"
+  },
+  {
+    "name": "KINDER CREAMY",
+    "price": "30",
+    "weight": "19g",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/40200865_3-kinder-creamy-milky-cocoa-chocolate-with-extruded-rice.jpg"
+  },
+  {
+    "name": "HERSHEY'S EXTRA CREAMY",
+    "price": "500",
+    "weight": "50g",
+    "image_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1080/da/cms-assets/cms/product/1821e88d-7dd4-4ea8-a5f7-04232fbf52e4.png"
+  },
+  {
+    "name": "HERSHEY'S SPECIAL DARK",
+    "price": "500",
+    "weight": "50g",
+    "image_url": "https://m.media-amazon.com/images/I/71A8nY+KDFL.jpg"
+  },
+  {
+    "name": "DAIRY MILK WHOLENUT",
+    "price": "2000",
+    "weight": "300g",
+    "image_url": "https://sa.adanione.com/-/media/Foundation/Adani/Dutyfree/ProductImages/Confectionery/Chocolates/Cadbury/05A03099/1_cadbury_cdm_wholenutwtrtablet300flowwraprightglobal.jpg"
+  },
+  {
+    "name": "DAIRY MILK TRIPPLE CHOCOLATE",
+    "price": "2000",
+    "weight": "300g",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/40264865_1-cadbury-dairy-milk-triple-chocolate-creamy-rich-flavour.jpg"
+  },
+  {
+    "name": "DAIRY MILK CHOCOLATE",
+    "price": "2000",
+    "weight": "300g",
+    "image_url": "https://images.shop.frankfurt-airport.com/pim/defaults/1340x,jpeg/catalog/2/c/0/b/2c0bb3cd186702a0e7ac06b4a6436d6b_1087377_1.jpg"
+  },
+  {
+    "name": "KINDER JOY",
+    "price": "50",
+    "weight": "20g",
+    "image_url": "https://www.kinder.com/in/sites/kinder_in/files/2023-09/kj-4.png?t=1756481636"
+  },
+  {
+    "name": "FERRERO ROCHER T3",
+    "price": "250",
+    "weight": "37g",
+    "image_url": "https://rukminim2.flixcart.com/image/480/480/xif0q/chocolate/c/s/g/37-5-t3-chocolates-imported-37-5gms-1-ferrero-rocher-original-imaggmurdhhzhben.jpeg?q=90"
+  },
+  {
+    "name": "TOBLERONE MILK CHOCOLATE WITH HONEY AND ALMOND",
+    "price": "89",
+    "weight": "35g",
+    "image_url": "https://cdn.mafrservices.com/pim-content/UAE/media/product/5526/1755749403/5526_main.jpg?im=Resize=400"
+  },
+  {
+    "name": "TOBLERONE WHITE CHOCOLATE WITH HONEY AND ALMOND",
+    "price": "325",
+    "weight": "100g",
+    "image_url": "https://m.media-amazon.com/images/I/41oAL5prKeL._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "TOBLERONE MILK CHOCOLATE WITH HONEY AND ALMOND",
+    "price": "325",
+    "weight": "100g",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Toblerone_3362.jpg"
+  },
+  {
+    "name": "TOBLERONE MILK CHOCOLATE WITH HONEY AND ALMOND & SALTED CARAMELIZED ALMOND",
+    "price": "325",
+    "weight": "100g",
+    "image_url": "https://cococart.in/cdn/shop/files/1CH0402.jpg?v=1711957093"
+  },
+  {
+    "name": "TOBLERONE MILK CHOCOLATE WITH RAISINS & HONEY AND ALMOND",
+    "price": "325",
+    "weight": "100g",
+    "image_url": "TOBLERONE MILK CHOCOLATE WITH RAISINS & HONEY AND ALMOND"
+  },
+  {
+    "name": "TOBLERONE MILK CHOCOLATE WITH HONEY AND ALMOND PACKET",
+    "price": "1099",
+    "weight": "200g",
+    "image_url": "https://rukminim2.flixcart.com/image/480/480/xif0q/chocolate/w/t/k/200-milk-chocolate-with-honey-and-almond-nougat-1-toblerone-original-imahfy852huhegam.jpeg?q=90"
+  },
+  {
+    "name": "DAIM CHOCOLATE PACKET",
+    "price": "780",
+    "weight": "200g",
+    "image_url": "https://m.media-amazon.com/images/I/51NdHJ+HOUL._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "BEST CASTAWAY CASHEWS",
+    "price": "60",
+    "weight": "13g",
+    "image_url": "https://cdn.mafrservices.com/pim-content/UAE/media/product/98409/1749529203/98409_main.jpg"
+  },
+  {
+    "name": "COSMIC CLASIC MIX",
+    "price": "60",
+    "weight": "20g",
+    "image_url": "https://z.nooncdn.com/products/tr:n-t_400/v1641202128/N27682083A_1.jpg"
+  },
+  {
+    "name": "POPIN PISTACHIO",
+    "price": "60",
+    "weight": "13g",
+    "image_url": "https://ebaqala.com/6955-large_default/best_popin_pistachio_13gm.jpg"
+  },
+  {
+    "name": "OMAN DATE BAR",
+    "price": "35",
+    "weight": "21g",
+    "image_url": "https://superdokan.com/cdn/shop/files/85deb5e3a7cbea86a4b7da77f335ca83.webp?v=1730294712"
+  },
+  {
+    "name": "MAAMOUL OMAN DATE BISCUIT",
+    "price": "25",
+    "weight": "20g",
+    "image_url": "https://kuwait.grandhyper.com/image/cache/catalog/products/1/9501025224316-1000x1000.jpeg"
+  },
+  {
+    "name": "MAAMOUL SAUDIA DATE BISCUIT",
+    "price": "25",
+    "weight": "19g",
+    "image_url": "https://cdn.mafrservices.com/sys-master-root/h69/heb/49644794150942/982246_main.jpg"
+  },
+  {
+    "name": "JEWELS GALAXY CHOCOLATE BOX",
+    "price": "1499",
+    "weight": "383g",
+    "image_url": "https://images-eu.ssl-images-amazon.com/images/I/81vW4WuwydL._AC_UL600_SR600,600_.jpg"
+  },
+  {
+    "name": "CHOCO TIDO",
+    "price": "20",
+    "weight": "18g",
+    "image_url": "https://d1l8km4g5s76x5.cloudfront.net/Production/exb_doc/2033/35459/2033_35459_34890_8493.png/fit-in/500x500"
+  },
+  {
+    "name": "SAFARI",
+    "price": "30",
+    "weight": "22g",
+    "image_url": "https://gulfmarket.in/admin8891450001/uploadimg/17065202072116IMG_20240129_144422.jpg"
+  },
+  {
+    "name": "HERSHEY'S COOKIES AND CREAM",
+    "price": "110",
+    "weight": "40g",
+    "image_url": "https://m.media-amazon.com/images/I/61GlLbaW2SL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "BREAK CHOCOLATE",
+    "price": "60",
+    "weight": "25g",
+    "image_url": "https://cdn.mafrservices.com/sys-master-root/h75/h28/61922655862814/403072_main.jpg"
+  },
+  {
+    "name": "NANI PISTACHIO NOUGAT & CARAMEL CHOCOLATE BAR",
+    "price": "59",
+    "weight": "40g",
+    "image_url": "https://export.shirinasal.com/Content/Images/Products/plog5199.png"
+  },
+  {
+    "name": "NANI ALMOND CARAMEL AND NOUGAT CHOCOLATE BAR",
+    "price": "59",
+    "weight": "40g",
+    "image_url": "https://export.shirinasal.com/Content/Images/Products/plog5384.png"
+  },
+  {
+    "name": "HISS CRISPY WAFER",
+    "price": "25",
+    "weight": "21g",
+    "image_url": "https://cdn.shopify.com/s/files/1/0567/3808/7091/products/hiss-chocolate01-18781-681819-170821031841.jpg?v=1678443268"
+  },
+  {
+    "name": "FOXS FRUITY MINTS",
+    "price": "160",
+    "weight": "90g",
+    "image_url": "https://m.media-amazon.com/images/I/81HIwzI3noL.jpg"
+  },
+  {
+    "name": "FOXS FRUITS",
+    "price": "160",
+    "weight": "90g",
+    "image_url": "https://m.media-amazon.com/images/I/81hV1n7LJtL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "FOXS BERRIES",
+    "price": "160",
+    "weight": "90g",
+    "image_url": "https://m.media-amazon.com/images/I/61bbOdn3OHL.jpg"
+  },
+  {
+    "name": "FOXS MINTS",
+    "price": "160",
+    "weight": "90g",
+    "image_url": "https://m.media-amazon.com/images/I/81S416nVyiL.jpg"
+  },
+  {
+    "name": "FOXS FRUITS TIN",
+    "price": "280",
+    "weight": "180g",
+    "image_url": "https://m.media-amazon.com/images/I/51ut4zwuy0L.jpg"
+  },
+  {
+    "name": "FOXS FRUITY MINTS TIN",
+    "price": "280",
+    "weight": "180g",
+    "image_url": "https://m.media-amazon.com/images/I/51Auj8C6lPL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "FOXS BERRIES TIN",
+    "price": "280",
+    "weight": "180g",
+    "image_url": "https://m.media-amazon.com/images/I/61aRTde1G4L._AC_UF350,350_QL50_.jpg"
+  },
+  {
+    "name": "TIC TAC ORANGE",
+    "price": "10",
+    "weight": "7.2g",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/268978_7-tic-tac-orange-flavoured.jpg"
+  },
+  {
+    "name": "TIC TAC MINT",
+    "price": "10",
+    "weight": "7.2g",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/40124695_6-tic-tac-candy-mint.jpg"
+  },
+  {
+    "name": "BISCOFF BISCUIT",
+    "price": "699",
+    "weight": "250g",
+    "image_url": "https://www.just-food.com/wp-content/uploads/sites/28/2024/06/shutterstock_2445503485-e1718272184430.jpg"
+  },
+  {
+    "name": "COFFEE JOY BISCUIT",
+    "price": "59",
+    "weight": "37g",
+    "image_url": "https://5.imimg.com/data5/ANDROID/Default/2023/6/320252506/YI/NZ/HJ/46851918/product-jpeg.jpg"
+  },
+  {
+    "name": "TIFFANY GLUCOSE MILK AND HONEY BISCUITS",
+    "price": "50",
+    "weight": "40G",
+    "image_url": "https://cdn.mafrservices.com/pim-content/UAE/media/product/5671/1748782804/5671_main.jpg"
+  },
+  {
+    "name": "MEIJI HELLO PANDA CHOCOLATE BISCUIT",
+    "price": "99",
+    "weight": "22g",
+    "image_url": "https://cdn.mafrservices.com/pim-content/UAE/media/product/2178899/1748602804/2178899_main.jpg"
+  },
+  {
+    "name": "MEIJI HELLO PANDA STRAWBERRY BISCUIT",
+    "price": "99",
+    "weight": "42g",
+    "image_url": "https://snackstar.in/cdn/shop/files/Untitled_design_30_5_1200x1200.png?v=1755761924"
+  },
+  {
+    "name": "MEIJI MINI HELLO PANDA CHOCOLATE BISCUIT",
+    "price": "49",
+    "weight": "21g",
+    "image_url": "https://m.media-amazon.com/images/I/811ObRnJLoL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "3D EYE SPINNER",
+    "price": "15",
+    "weight": "8g",
+    "image_url": "https://cdn.quicksell.co/-Mj5BUyTtyTgI5aqzZnV/products/-OTC9K0okYQTeZmL0aIj.jpg"
+  },
+  {
+    "name": "EYE BALL GUMMY SOFT CANDY",
+    "price": "10",
+    "weight": "10g",
+    "image_url": "https://m.media-amazon.com/images/I/818Pt3QmziL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "QUAKER WHOLE OATS",
+    "price": "700",
+    "weight": "900g",
+    "image_url": "https://cdn.mafrservices.com/pim-content/UAE/media/product/2222896/1734274803/2222896_main.jpg?im=Resize=376"
+  },
+  {
+    "name": "NUTELLA HAZELNUT SPREAD WITH COCOA",
+    "price": "250",
+    "weight": "180g",
+    "image_url": "https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/NI_CATALOG/IMAGES/CIW/2025/9/29/d149b0f9-7e68-4756-9781-feb9d21edcee_13728_1.png"
+  },
+  {
+    "name": "NUTELLA HAZELNUT SPREAD WITH COCOA",
+    "price": "450",
+    "weight": "350g",
+    "image_url": "https://i5.peapod.com/c/I4/I4NKE.png"
+  },
+  {
+    "name": "ALMARAI CREAMY TASTE",
+    "price": "460",
+    "weight": "200g",
+    "image_url": "https://gulfmarket.in/admin8891450001/uploadimg/1746608034351591acfb82-03ca-4e7b-8e10-be1deed4830f_copy_625x625.jpg.jpg"
+  },
+  {
+    "name": "ALMARAI CREAMY TASTE",
+    "price": "899",
+    "weight": "500g",
+    "image_url": "https://gulfmarket.in/admin8891450001/uploadimg/1746608034351591acfb82-03ca-4e7b-8e10-be1deed4830f_copy_625x625.jpg.jpg"
+  },
+  {
+    "name": "BISCOFF SMOOTH",
+    "price": "699",
+    "weight": "400g",
+    "image_url": "https://m.media-amazon.com/images/I/71bSZLv6VeL.jpg"
+  },
+  {
+    "name": "SONYA PEANUT BUTTER CRUNCHY",
+    "price": "260",
+    "weight": "510g",
+    "image_url": "https://www.sonyafoods.com/cdn/shop/products/crunchy-peanut-butter.png?v=1551446650"
+  },
+  {
+    "name": "SONYA PEANUT BUTTER CREAMY",
+    "price": "260",
+    "weight": "510g",
+    "image_url": "https://www.sonyafoods.com/cdn/shop/products/creamy-peanut-butter.png?v=1551447098"
+  },
+  {
+    "name": "NUTS CRISP",
+    "price": "399",
+    "weight": "400g",
+    "image_url": "https://www.shundat.com/cdn/shop/files/9_913fde3b-3dac-4125-a0c3-b37e93bcbe18.jpg?v=1726454539"
+  },
+  {
+    "name": "COFFEE MATE",
+    "price": "380",
+    "weight": "400g",
+    "image_url": "https://rukminim2.flixcart.com/image/480/640/xif0q/coffee/j/j/t/400-coffee-mate-original-plastic-bottle-1-instant-coffee-nestle-original-imaha8t5jyradbhz.jpeg?q=90"
+  },
+  {
+    "name": "HEINZ APPLE CIDER VINEGAR",
+    "price": "480",
+    "weight": "500ml",
+    "image_url": "https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/sgrahoszkbp2fir8ew3c.png?dpr=3&format=auto"
+  },
+  {
+    "name": "ANCHOR POWDER",
+    "price": "3200",
+    "weight": "2.25kg",
+    "image_url": "https://m.media-amazon.com/images/I/61MSINtynKL.jpg"
+  },
+  {
+    "name": "PRO PREMIUM APRICOT DRIED WHOLE",
+    "price": "299",
+    "weight": "250g",
+    "image_url": "https://www.jiomart.com/images/product/original/492864459/prov-premium-dried-whole-apricots-250-g-product-images-o492864459-p592451470-0-202207082131.jpg?im=Resize=(1000,1000)"
+  },
+  {
+    "name": "TANG MANGO BOTTLE",
+    "price": "850",
+    "weight": "750g",
+    "image_url": "https://m.media-amazon.com/images/I/61unbBsyzKL.jpg"
+  },
+  {
+    "name": "TANG ORANGE PACKET",
+    "price": "259",
+    "weight": "375g",
+    "image_url": "https://m.media-amazon.com/images/I/91goTc9nx1L.jpg"
+  },
+  {
+    "name": "TANG PINEAPPLE PACKET",
+    "price": "259",
+    "weight": "375g",
+    "image_url": "https://m.media-amazon.com/images/I/81LkX3XqBFL.jpg"
+  },
+  {
+    "name": "TANG TROPICAL PACKET",
+    "price": "259",
+    "weight": "375g",
+    "image_url": "https://m.media-amazon.com/images/I/61XaYq2aa8L.jpg"
+  },
+  {
+    "name": "TANG LEMON PACKET",
+    "price": "259",
+    "weight": "375g",
+    "image_url": "https://m.media-amazon.com/images/I/61DVNNX052L._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "HERSHEY'S WHOLE ALMONDS COVERED IN CREAMY MILK CHOCOLATE",
+    "price": "500",
+    "weight": "60g",
+    "image_url": "https://bf1af2.akinoncloudcdn.com/products/2024/12/26/97798/49ce4e73-077e-4a79-9b38-d60fb4e1fcd3_size3840_cropCenter.jpg"
+  },
+  {
+    "name": "CHOKI CHOKI",
+    "price": "49",
+    "weight": "27g",
+    "image_url": "https://cdn11.bigcommerce.com/s-5wf0xbtgyb/images/stencil/1280x1280/products/5544/15842/image_3576610d-c79c-4dea-bd55-5a3ae25db356__19935.1709713250.jpg?c=2?imbypass=on"
+  },
+  {
+    "name": "MEIJI YAN YAN STRAWBERRY BISCUIT WITH STRAWBERRY CREAM",
+    "price": "110",
+    "weight": "40g",
+    "image_url": "https://regalplus.com/cdn/shop/files/1af6bdad-d034-4893-89d8-87dcb44b6080.jpg?v=1736526889"
+  },
+  {
+    "name": "MEIJI YAN YAN CHOCOLATE BISCUIT WITH CHOCOLATE CREAM",
+    "price": "110",
+    "weight": "40g",
+    "image_url": "https://www.meiji.com/global/food/common/img/chocolate/chocolate_33.jpg"
+  },
+  {
+    "name": "OREOGO CHOCOLATE STICK & CREAM DIP",
+    "price": "99",
+    "weight": "40g",
+    "image_url": "https://m.media-amazon.com/images/I/41s7KsLpGJL.jpg_BO30,255,255,255_UF900,850_SR1910,1000,0,C_PIRIOFOUR-medium,BottomLeft,30,-20_ZJPHNwYW4gZm9yZWdyb3VuZD0iIzU2NTk1OSIgZm9udD0iQW1hem9uRW1iZXIgNTAiID43PC9zcGFuPg==,500,900,420,420,0,0_QL100_.jpg"
+  },
+  {
+    "name": "QUICK MILK MAGIC SNIPER SALTED CARAMEL",
+    "price": "199",
+    "weight": "30g",
+    "image_url": "https://m.media-amazon.com/images/I/61H1DKnuvQL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "DREAM EXTRA FINE CHOCO BISCUIT",
+    "price": "129",
+    "weight": "80g",
+    "image_url": "https://www.cyruscrafts.com/6124-medium_default/shirin-asal-milk-chocolate-biscuits-ta-1722--80-grams.jpg"
+  },
+  {
+    "name": "KOPIKO CAPPUCCINO CHOCOLATE PACKET",
+    "price": "499",
+    "weight": "400g",
+    "image_url": "https://m.media-amazon.com/images/I/51cyO3lnBbL._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "KOPIKO COFFEE CHOCOLATE PACKET",
+    "price": "499",
+    "weight": "400g",
+    "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61+qo18aisL._AC_UL900_SR615,900_.jpg"
+  },
+  {
+    "name": "BAR B Q JELLY",
+    "price": "25",
+    "weight": "",
+    "image_url": "https://m.media-amazon.com/images/I/51+6Y+mxWJL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "MALTESERS",
+    "price": "140",
+    "weight": "37g",
+    "image_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1080/da/cms-assets/cms/product/7adf2fbe-d6c2-4a3b-9556-56c7dc3620bd.png"
+  },
+  {
+    "name": "LOACKER CLASIC NAPOLITANER",
+    "price": "130",
+    "weight": "45g",
+    "image_url": "https://m.media-amazon.com/images/I/51OtqZTQKcS.jpg"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY STRAWBERRY WAFFERS",
+    "price": "99",
+    "weight": "135g",
+    "image_url": "https://www.jiomart.com/images/product/original/490009651/tiffany-crunch-n-cream-strawberry-wafers-135-g-product-images-o490009651-p590116248-0-202402130909.jpg"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY CHOCOLATE WAFFERS",
+    "price": "99",
+    "weight": "135g",
+    "image_url": "https://m.media-amazon.com/images/I/713UUylcZwL.jpg"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY HAZELNUT WAFFERS",
+    "price": "99",
+    "weight": "135g",
+    "image_url": "https://www.jiomart.com/images/product/original/490009649/tiffany-crunch-n-cream-hazelnut-wafers-135-g-product-images-o490009649-p590116246-0-202402130909.jpg"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY ORANGE WAFFERS",
+    "price": "99",
+    "weight": "135g",
+    "image_url": "https://m.media-amazon.com/images/I/71PV1kQovML.jpg"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY VANILA WAFFERS",
+    "price": "99",
+    "weight": "135g",
+    "image_url": "https://m.media-amazon.com/images/I/71uyk1+oUEL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY STRAWBERRY WAFFERS",
+    "price": "66",
+    "weight": "65g",
+    "image_url": "https://www.jiomart.com/images/product/original/490160321/tiffany-crunch-n-cream-strawberry-wafers-65-g-product-images-o490160321-p590123140-0-202402130909.jpg?im=Resize=(420,420)"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY CHOCOLATE WAFFERS",
+    "price": "66",
+    "weight": "65g",
+    "image_url": "https://i.chaldn.com/_mpimage/tiffany-crunch-n-cream-chocolate-wafers-65-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D136236&q=best&v=1&m=400&m=1600"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY HAZELNUT WAFFERS",
+    "price": "66",
+    "weight": "65g",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/40002870_3-tiffany-cream-wafers-crunch-n-cream-crunchiest-hazelnut-flavored.jpg"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY ORANGE WAFFERS",
+    "price": "66",
+    "weight": "65g",
+    "image_url": "https://www.jiomart.com/images/product/original/490160320/tiffany-crunch-n-cream-orange-wafers-65-g-product-images-o490160320-p590123139-0-202411221049.jpg"
+  },
+  {
+    "name": "TIFFANY CRUNCH AND CREAMY VANILA WAFFERS",
+    "price": "66",
+    "weight": "65g",
+    "image_url": "https://www.jiomart.com/images/product/original/490009652/tiffany-crunch-n-cream-vanilla-wafers-135-g-product-images-o490009652-p590116249-0-202402130909.jpg"
+  },
+  {
+    "name": "OREO DUTCH COCOA WAFFER",
+    "price": "125",
+    "weight": "117g",
+    "image_url": "https://down-my.img.susercontent.com/file/7d9bc59f448789de3642378180905c4e"
+  },
+  {
+    "name": "M&M CRISPY",
+    "price": "130",
+    "weight": "36g",
+    "image_url": "https://cococart.in/cdn/shop/files/1CH2623.jpg?v=1737701327"
+  },
+  {
+    "name": "M&M PEANUT",
+    "price": "130",
+    "weight": "45g",
+    "image_url": "https://cococart.in/cdn/shop/products/m_m-22.png?v=1659950215"
+  },
+  {
+    "name": "M&M CHOCOLATE",
+    "price": "130",
+    "weight": "45g",
+    "image_url": "https://www.wholesaleshopy.com/assets/grocery/S2aELV4dWqe3P9y.jpg"
+  },
+  {
+    "name": "MILKA OREO",
+    "price": "249",
+    "weight": "90g",
+    "image_url": "https://m.media-amazon.com/images/I/714WuPgiauL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "MILKA STRAWBERRY",
+    "price": "240",
+    "weight": "90g",
+    "image_url": "https://m.media-amazon.com/images/I/710aUglHxWL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "MILKA ALPINE MILK",
+    "price": "240",
+    "weight": "98g",
+    "image_url": "https://www.jiomart.com/images/product/original/491695935/milka-alpine-milk-chocolate-100-g-product-images-o491695935-p608195499-0-202402271225.jpg?im=Resize=(420,420)"
+  },
+  {
+    "name": "MILKA BUBBLY ALPINE MILK",
+    "price": "249",
+    "weight": "90g",
+    "image_url": "https://m.media-amazon.com/images/I/71SoFL5ekDL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "MILKA CARAMEL",
+    "price": "240",
+    "weight": "95g",
+    "image_url": "https://m.media-amazon.com/images/I/717Xwed1igL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "CADBURY DAIRY MILK HAZELNUT",
+    "price": "420",
+    "weight": "130g",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2025/10/550641968/HG/CG/CC/63388968/005104-1-1-e7fe7a58-dad7-4f29-b647-c572eacce8b6-500x500.jpg"
+  },
+  {
+    "name": "CADBURY DAIRY MILK BLACK FOREST",
+    "price": "420",
+    "weight": "130g",
+    "image_url": "https://m.media-amazon.com/images/I/41YF6E5MdAL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "DAIRY MILK ROAST ALMOND",
+    "price": "420",
+    "weight": "130g",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2025/10/550644046/QK/XJ/QF/63388968/my-11134201-7rase-m7lr0ilbbyji11-500x500.jpg"
+  },
+  {
+    "name": "CADBURY DAIRY MILK BUBBLY",
+    "price": "290",
+    "weight": "87g",
+    "image_url": "https://m.media-amazon.com/images/I/71RnYZhHNhL.jpg"
+  },
+  {
+    "name": "CONFETTERIA RAFFAELLO",
+    "price": "160",
+    "weight": "30g",
+    "image_url": "https://maplesfood.com/wp-content/uploads/2020/12/raffaello-3pcs.jpg"
+  },
+  {
+    "name": "PRINGLES TANGY TOMATO TWIST",
+    "price": "120",
+    "weight": "102g",
+    "image_url": "https://m.media-amazon.com/images/I/717OXDQY87L._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "PRINGLES PIZZA",
+    "price": "120",
+    "weight": "102g",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/40127974_8-pringles-potato-crisps-pizza-flavour.jpg"
+  },
+  {
+    "name": "PRINGLES SOUTH AFRICAN STYLE PERI PERI",
+    "price": "120",
+    "weight": "102g",
+    "image_url": "https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/11/7/25f8b191-39aa-41fa-8009-79135dfed790_632_1.png"
+  },
+  {
+    "name": "PRINGLES SALT AND VINEGAR",
+    "price": "249",
+    "weight": "165g",
+    "image_url": "https://m.media-amazon.com/images/I/71c9NQ0RIpL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "HAMDARD SARBATH",
+    "price": "1000",
+    "weight": "800ml",
+    "image_url": "https://m.media-amazon.com/images/I/61DhX83h6bL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "EVIAN NATURAL MINERAL WATER",
+    "price": "149",
+    "weight": "500ml",
+    "image_url": "https://m.media-amazon.com/images/I/61oQ5VdP7EL.jpg"
+  },
+  {
+    "name": "MOGU MOGU MELON",
+    "price": "70",
+    "weight": "320ml",
+    "image_url": "https://images.apollo247.in/pub/media/catalog/product/m/o/mog0026-2.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%20400w"
+  },
+  {
+    "name": "MOGU MOGU ORANGE",
+    "price": "70",
+    "weight": "320ml",
+    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/87d776f4-438b-48c2-b4db-98087d8c0236.jpg"
+  },
+  {
+    "name": "MOGU MOGU APPLE",
+    "price": "70",
+    "weight": "320ml",
+    "image_url": "https://www.healthfoods4us.com/brands/mogumogu/products/mogu_apple.png"
+  },
+  {
+    "name": "MOGU MOGU GRAPES",
+    "price": "70",
+    "weight": "320ml",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/100334329_7-mogu-mogu-juice-grape.jpg"
+  },
+  {
+    "name": "MOGU MOGU STRAWBERRY",
+    "price": "70",
+    "weight": "320ml",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/100334326_6-mogu-mogu-juice-strawberry.jpg"
+  },
+  {
+    "name": "FRESA FRESHER LEMON",
+    "price": "90",
+    "weight": "250ml",
+    "image_url": "https://cms.fresa.com.tr/tr.com.fresher.v1/products-fresher-250-lemon-01.png"
+  },
+  {
+    "name": "FRESA FRESHER WATERMELON AND STRAWBERRY",
+    "price": "90",
+    "weight": "250ml",
+    "image_url": "https://cms.fresa.com.tr/tr.com.fresher.v1/products-fresher-250-watermelon-strawberry-01.png"
+  },
+  {
+    "name": "ASTOR WAFER STICK COKELAT MORE CHOCOLATE",
+    "price": "899",
+    "weight": "330g",
+    "image_url": "https://images-cdn.ubuy.co.in/6365e4517a2ac8325263e7ae-astor-wafer-stick-chocolate-flavor.jpg"
+  },
+  {
+    "name": "NESTLE NIDO",
+    "price": "1949",
+    "weight": "900g",
+    "image_url": "https://m.media-amazon.com/images/I/51s1NNh46CL.jpg"
+  },
+  {
+    "name": "NESTLE NIDO",
+    "price": "799",
+    "weight": "400g",
+    "image_url": "https://www.luckystore.in/cdn/shop/files/Nido-Milk-Powder-400g-Nutrient-Rich-Nestle-Instant-Milk-Powder-Luckystore-59877435_750x.png?v=1752229644"
+  },
+  {
+    "name": "NESTLE MILO",
+    "price": "549",
+    "weight": "400g",
+    "image_url": "https://i0.wp.com/aafiadryfruits.in/wp-content/uploads/2024/08/mailo-tin.jpg"
+  },
+  {
+    "name": "ANCHOR FORTIFIED FULL CREAM MILK POWDER",
+    "price": "1250",
+    "weight": "400g",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5M2MnZPg89zhXy0HTV-ilTBZDREmzOTkwdA&s"
+  },
+  {
+    "name": "SAMYANG BULDAK CHEESE HOT CHICKEN RAMEN",
+    "price": "190",
+    "weight": "105g",
+    "image_url": "https://m.media-amazon.com/images/I/81N6nKxHTTL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "SAMYANG BULDAK QUATTRO CHEESE HOT CHICKEN RAMEN",
+    "price": "190",
+    "weight": "110g",
+    "image_url": "https://m.media-amazon.com/images/I/615uJK1utUL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "SAMYANG KOREAN KIMCHI FLAVOUR RAMEN",
+    "price": "110",
+    "weight": "70g",
+    "image_url": "https://m.media-amazon.com/images/I/61axbpxSi7L.jpg"
+  },
+  {
+    "name": "SAMYANG BLACK BULDAK HOT CHICKEN FLAVOUR RAMEN",
+    "price": "130",
+    "weight": "70g",
+    "image_url": "https://m.media-amazon.com/images/I/41uoxtdwTnL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "PRINGLES ORIGINAL POTATO CHIPS TIN",
+    "price": "160",
+    "weight": "37g",
+    "image_url": "https://funfoods.ca/cdn/shop/files/00064100852631x.jpg?v=1759500866&width=900"
+  },
+  {
+    "name": "CHIPS OMAN POTATO CHIPS CHILLI FLAVOUR TIN",
+    "price": "130",
+    "weight": "37g",
+    "image_url": "https://m.media-amazon.com/images/I/51hrbBfWZ5L._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "FIGARO SPANISH BRAND MULTIPURPOSE OLIVE OIL",
+    "price": "399",
+    "weight": "200ml",
+    "image_url": "https://m.media-amazon.com/images/I/71ltIhBaC9L.jpg"
+  },
+  {
+    "name": "FIGARO SPANISH BRAND MULTIPURPOSE OLIVE OIL",
+    "price": "939",
+    "weight": "500ml",
+    "image_url": "https://m.media-amazon.com/images/I/61igacZ3vsL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "FIGARO PLAIN GREEN OLIVES",
+    "price": "340",
+    "weight": "450g",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/40208806_1-figaro-plain-green-olives.jpg"
+  },
+  {
+    "name": "FIGARO PLAIN BLACK OLIVES",
+    "price": "340",
+    "weight": "450g",
+    "image_url": "https://palmtreeshopping.com/cdn/shop/files/FIGARO-PLAIN-BLACK-OLIVES-450-G.png?v=1735783944"
+  },
+  {
+    "name": "DONUT MARSHMALLOW",
+    "price": "40",
+    "weight": "10g",
+    "image_url": "https://i5.walmartimages.com/asr/fb6bb107-1a1e-4640-b697-51d7cfff2e85.f385838eb301b7c05980cea91a46a264.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+  },
+  {
+    "name": "CARTOON MARSHMALLOW",
+    "price": "40",
+    "weight": "10g",
+    "image_url": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/74dc74c61e4b4f938b635e5101d45e90~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=e1be8f53&idc=my&from=2378011839"
+  },
+  {
+    "name": "QUADRATINI LOACKER VANILLA WAFFERS",
+    "price": "299",
+    "weight": "125g",
+    "image_url": "https://m.media-amazon.com/images/I/61k7O5kH8qS.jpg"
+  },
+  {
+    "name": "QUADRATINI LOACKER COCOA AND MILK WAFFERS",
+    "price": "299",
+    "weight": "125g",
+    "image_url": "https://m.media-amazon.com/images/I/51G4ZWKr7nS.jpg"
+  },
+  {
+    "name": "QUADRATINI LOACKER NAPOLITANER WAFFERS",
+    "price": "299",
+    "weight": "125g",
+    "image_url": "https://m.media-amazon.com/images/I/61hYVk2wdmL.jpg"
+  },
+  {
+    "name": "QUADRATINI LOACKER DARK CHOCOLATE WAFFERS",
+    "price": "299",
+    "weight": "125g",
+    "image_url": "https://thegiftstudio.com/cdn/shop/files/Loacker_Quadratini_Dark_Choco_Wafer_125G_1188488.jpg?v=1744102404"
+  },
+  {
+    "name": "QUADRATINI LOACKER ESPRESSO WAFFERS",
+    "price": "299",
+    "weight": "110g",
+    "image_url": "https://m.media-amazon.com/images/I/61GX-DgTq4L.jpg"
+  },
+  {
+    "name": "QUADRATINI LOACKER DOUBLE CHOC WAFFERS",
+    "price": "299",
+    "weight": "125g",
+    "image_url": "https://m.media-amazon.com/images/I/51x-TtwGgiS.jpg"
+  },
+  {
+    "name": "QUADRATINI LOACKER CAPPUCCINO WAFFERS",
+    "price": "299",
+    "weight": "110g",
+    "image_url": "https://m.media-amazon.com/images/I/61WsT6kZLWL.jpg"
+  },
+  {
+    "name": "QUADRATINI LOACKER TIRAMISU WAFFERS",
+    "price": "480",
+    "weight": "220g",
+    "image_url": "https://m.media-amazon.com/images/I/6116bcmUFKL.jpg"
+  },
+  {
+    "name": "QUADRATINI LOACKER BLUEBERRY -YOGURT WAFFERS",
+    "price": "480",
+    "weight": "220g",
+    "image_url": "https://m.media-amazon.com/images/I/61icPlr6VvS.jpg"
+  },
+  {
+    "name": "QUADRATINI LOACKER CHOCOLATE WAFFERS",
+    "price": "499",
+    "weight": "250g",
+    "image_url": "https://m.media-amazon.com/images/I/61s69hN22fS._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "COLA WITH DATES EXTRACT TIN",
+    "price": "120",
+    "weight": "240ml",
+    "image_url": "https://m.media-amazon.com/images/I/81SZFaJ1dNL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "RANI FLOAT PEACH JUICE TIN",
+    "price": "120",
+    "weight": "240ml",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/7/437689080/UJ/EQ/MV/99399999/rani-fruit-drink-peach-flavor-240-ml.png"
+  },
+  {
+    "name": "RANI FLOAT GUAVA JUICE TIN",
+    "price": "120",
+    "weight": "240ml",
+    "image_url": "https://m.media-amazon.com/images/I/51bWRooFocL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "RANI FLOAT MANGO JUICE TIN",
+    "price": "120",
+    "weight": "240ml",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/7/437698230/MT/TR/BL/99399999/rani-fruit-drink-mango-flavor-240-ml.png"
+  },
+  {
+    "name": "RANI FLOAT PINEAPPLE JUICE TIN",
+    "price": "120",
+    "weight": "240ml",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/7/437702220/IN/LH/MP/99399999/rani-fruit-drink-pineapple-flavor-240-ml.png"
+  },
+  {
+    "name": "RANI FLOAT STRAWBERRY BANANA JUICE TIN",
+    "price": "120",
+    "weight": "240ml",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/7/437697839/PZ/BJ/SR/99399999/rani-fruit-drink-strawberry-banana-flavor-with-real-fruit-chunks-240-ml.png"
+  },
+  {
+    "name": "RANI FLOAT ORANGE JUICE TIN",
+    "price": "120",
+    "weight": "240ml",
+    "image_url": "https://restaurantsupplier1.com/wp-content/uploads/2024/08/Rani-Float-Can-Orange.jpg"
+  },
+  {
+    "name": "REDBULL ENERGY DRINK",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://m.media-amazon.com/images/I/51Bp30CR3IL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "REDBULL COCONUT EDITION COCONUT AND BERRY",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://m.media-amazon.com/images/I/31gYkg+L+XL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "REDBULL SUMMER EDITION WHITE PEACH",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://images-cdn.ubuy.co.in/6818d88f1e116cc79003d6d8-red-bull-white-peach-summer-edition.jpg"
+  },
+  {
+    "name": "REDBULL ICE EDITION ICED VANILLA BERRY",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/528x1348/2ef660537e/gb_igb_250ml_ac_the-ice-edition_country_rgb_packrq-2739_cold_closed_front_com_full.png/m/1000x0"
+  },
+  {
+    "name": "REDBULL GREEN EDITION CURUBA-ELDER FLOWER",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/870x2200/4bc7dcbf6f/us_ce_250ml_the-green-edition_country_rgb_packrq-1710_cold_closed_front_com_25.png/m/1000x0"
+  },
+  {
+    "name": "REDBULL TROPICAL EDITION TROPICAL FRUITS",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://m.media-amazon.com/images/I/51a+Lw2ckJL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "REDBULL BLUE EDITION JUNEBERRY",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://a.storyblok.com/f/287059/870x2200/31141b9a15/us_jb_250ml_the-sea-blue-edition_country_rgb_do242582_cold_closed_front_com_25.png"
+  },
+  {
+    "name": "REDBULL PINK EDITION FOREST FRUITS",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/528x1348/4ef42dfdce/gb_sf-ff_250ml_the-pink-edition-sugarfree_country_rgb_master_cold_closed_front_com_full.png/m/1000x0"
+  },
+  {
+    "name": "REDBULL APRICOT EDITION APRICOT -STRAWBERRY",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://lyko.com/globalassets/product-images/red-bull-apricot-edition-250ml.-3617-107-0250_1.png?ref=FB3B983134"
+  },
+  {
+    "name": "RED BLUE ENERGY DRINK 250",
+    "price": "120",
+    "weight": "250ml",
+    "image_url": "https://pasal101.thulo.com.np/assets/tenant/uploads/media-uploader/pasal101/20240628012246_306213029.jpg"
+  },
+  {
+    "name": "REDBULL SHOT",
+    "price": "300",
+    "weight": "60ml",
+    "image_url": "https://img-cdn.heureka.group/v1/2abcc85b-4299-4217-af60-b536a66e5f10.jpg"
+  },
+  {
+    "name": "VIMTO ENERGY DRINK SINCE 1908",
+    "price": "220",
+    "weight": "250ml",
+    "image_url": "https://m.media-amazon.com/images/I/61p9sHdHQqL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "SHANI FRUIT FLAVOURED DRINK",
+    "price": "220",
+    "weight": "250ml",
+    "image_url": "https://bf1af2.akinoncloudcdn.com/products/2025/06/26/379654/55be8d98-9e21-4ada-a32e-ba2400383453_size3840_cropCenter.jpg"
+  },
+  {
+    "name": "MONSTER ENERGY",
+    "price": "125",
+    "weight": "350ml",
+    "image_url": "https://m.media-amazon.com/images/I/61F1YLfg+wL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "BOOM BOOM ENERGY DRINK",
+    "price": "299",
+    "weight": "250ml",
+    "image_url": "https://boomboostan.com/en/Uploads/products/e2e501e9-180d-4174-b332-d277306449c6.jpg"
+  },
+  {
+    "name": "SAPPHIRE ASSORTMENT ALMONDS, HAZELNUT AND RAISINS COVERED IN MILK CHOCO",
+    "price": "500",
+    "weight": "175g",
+    "image_url": "https://m.media-amazon.com/images/I/51W3ymaUAVL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "SAPPHIRE ALMOND COVERED IN MILK CHOCO",
+    "price": "500",
+    "weight": "175g",
+    "image_url": "https://m.media-amazon.com/images/I/51-i4hG72IL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "SAPPHIRE ALMOND COVERED IN MILK CHOCO",
+    "price": "500",
+    "weight": "350g",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/40017562_8-sapphire-almonds-almonds-covered-with-milk-choco.jpg"
+  },
+  {
+    "name": "NESTLE QUALITY STREET CHOCOLATES",
+    "price": "1900",
+    "weight": "900g",
+    "image_url": "https://www.jungle.lk/wp-content/uploads/2018/06/Nestle-Quality-Street-Chocolates-900g.jpg"
+  },
+  {
+    "name": "SAPPHIRE ALMOND COVERED IN MILK CHOCO",
+    "price": "275",
+    "weight": "90g",
+    "image_url": "https://sapphireconfectionery.com/cdn/shop/files/IMG-20240816-WA0013_1200x.png?v=1727680258"
+  },
+  {
+    "name": "AMERICANA QUALITY PREMIUM BUTTER COOKIES",
+    "price": "599",
+    "weight": "454g",
+    "image_url": "https://murukali.com/cdn/shop/files/Americana-Premium-Butter-Cookies-454g-Murukali.com-107554143_700x700.jpg?v=1755412761"
+  },
+  {
+    "name": "HAPPY DAY ASSORTED BISCUITS",
+    "price": "650",
+    "weight": "600g",
+    "image_url": "https://d3a9swb5fm9qfw.cloudfront.net/uploads/drive/1VQIVlWThq4Ay4M8gkTJpbNI_z4fIGYnJ.jpg"
+  },
+  {
+    "name": "MCOATY BREAKFAST OAT COOKIES CHOCOLATE CHIPS",
+    "price": "250",
+    "weight": "96g",
+    "image_url": "https://cejdistributors.com/wp-content/uploads/2024/12/MC-OATY-W-CHOCO-CHIPS.png"
+  },
+  {
+    "name": "MCOATY BREAKFAST OAT COOKIES WITH RAISINS",
+    "price": "250",
+    "weight": "96g",
+    "image_url": "https://images.freshop.ncrcloud.com/1764405684714959886/fd9c1707ea88f6bd8b3649343e92379c_large.png"
+  },
+  {
+    "name": "GPR ROYAL BRITISH CHOCOLATE CHIPS COOKIES THE AUTHENTIC RECIPE",
+    "price": "250",
+    "weight": "96g",
+    "image_url": "https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/4/28/d63da293-fc93-42dc-bf39-91ad55cd12db_697726_3.png"
+  },
+  {
+    "name": "HARRODSON TRADITIONAL RECIPE BLUEBERRY AND ALMOND BUTTER COOKIES",
+    "price": "700",
+    "weight": "338g",
+    "image_url": "https://m.media-amazon.com/images/I/61xukCrEavL.jpg"
+  },
+  {
+    "name": "SAPPHIRE CHOCOCHIP COOKIES PREMIUM COLLECTION",
+    "price": "350",
+    "weight": "350g",
+    "image_url": "https://m.media-amazon.com/images/I/8168C0ng73L._UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "SAPPHIRE BUTTER COOKIES GOLD COLLECTION",
+    "price": "350",
+    "weight": "350g",
+    "image_url": "https://m.media-amazon.com/images/I/81BoxqPT82L.jpg"
+  },
+  {
+    "name": "SAPPHIRE BUTTER COOKIES SILVER COLLECTION",
+    "price": "350",
+    "weight": "350g",
+    "image_url": "https://sapphireconfectionery.com/cdn/shop/files/NewButterCookiesSilvercollection350gfront_1200x.jpg?v=1727677527"
+  },
+  {
+    "name": "SAPPHIRE ALMOND COVERED WITH MILK CHOCO HEART SHAPED",
+    "price": "475",
+    "weight": "160g",
+    "image_url": "https://m.media-amazon.com/images/I/61JAvvvGD8L._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "DANISA TRADITIONAL BUTTER COOKIES",
+    "price": "699",
+    "weight": "200g",
+    "image_url": "https://m.media-amazon.com/images/I/618LiFaWq9L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "name": "DANISA TRADITIONAL BUTTER COOKIES",
+    "price": "999",
+    "weight": "375g",
+    "image_url": "https://m.media-amazon.com/images/I/71x-TDb6t4L._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "DANISA TRADITIONAL BUTTER COOKIES",
+    "price": "1999",
+    "weight": "750g",
+    "image_url": "https://cdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/assets/7/d/4/0/7d40d59584aa8307d17f1ef26ac1a1205d55f94a_ea3c9bd060e24546bd5c3f0409082ab5.jpg"
+  },
+  {
+    "name": "ZAZIO MIXED BERRIES",
+    "price": "520",
+    "weight": "250g",
+    "image_url": "https://m.media-amazon.com/images/I/711dmsEtFUL.jpg"
+  },
+  {
+    "name": "ZAZIO MIXED NUTS",
+    "price": "520",
+    "weight": "250g",
+    "image_url": "https://m.media-amazon.com/images/I/61ex1LG9U1L.jpg"
+  },
+  {
+    "name": "DRY APRICOT POUCH",
+    "price": "299",
+    "weight": "250g",
+    "image_url": "https://tiimg.tistatic.com/fp/1/008/112/dry-apricot-with-packaging-size-5-10-kg-6-months-shelf-life-342.jpg"
+  },
+  {
+    "name": "ZAZIO DATE SYRUP",
+    "price": "399",
+    "weight": "500g",
+    "image_url": "https://m.media-amazon.com/images/I/61ffx27qVeL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "ALL NATURAL DATE SYRUP",
+    "price": "249",
+    "weight": "400g",
+    "image_url": "https://m.media-amazon.com/images/I/713rSxKKaPL.jpg"
+  },
+  {
+    "name": "APIS HIMALAYA HONEY",
+    "price": "325",
+    "weight": "500g",
+    "image_url": "https://m.media-amazon.com/images/I/71tnN9QKWhL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "name": "WAYANAD PREMIUM PURE NATURAL HONEY",
+    "price": "510",
+    "weight": "500g",
+    "image_url": "https://5.imimg.com/data5/ANDROID/Default/2024/8/439525223/WV/UP/QR/145691869/product-jpeg-500x500.jpg"
+  },
+  {
+    "name": "ROSH HONEY",
+    "price": "650",
+    "weight": "500g",
+    "image_url": "https://s3-us-west-2.amazonaws.com/clipthedeal/shop_products/1727179319.png"
+  },
+  {
+    "name": "WAYANAD PREMIUM PURE NATURAL HONEY",
+    "price": "260",
+    "weight": "240g",
+    "image_url": "https://5.imimg.com/data5/ANDROID/Default/2024/8/439525223/WV/UP/QR/145691869/product-jpeg-500x500.jpg"
+  },
+  {
+    "name": "APIS HIMALAYA HONEY",
+    "price": "165",
+    "weight": "225g",
+    "image_url": "https://m.media-amazon.com/images/I/51HNdejPRpL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "WAYANAD PREMIUM PURE NATURAL HONEY",
+    "price": "160",
+    "weight": "140g",
+    "image_url": "https://5.imimg.com/data5/ANDROID/Default/2024/8/439525223/WV/UP/QR/145691869/product-jpeg-500x500.jpg"
+  },
+  {
+    "name": "BGOOD WESTERN GHATS HERITAGE HONEY",
+    "price": "80",
+    "weight": "120g",
+    "image_url": "https://mybgood.com/cdn/shop/products/120Bgoodhoney_8313669b-b326-4677-b3df-c5dec3057015_500x.png?v=1650549665"
+  },
+  {
+    "name": "LEXUS COCONUT CREAM CHOCOLATE PACKET",
+    "price": "699",
+    "weight": "800g",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/7/431486876/NT/WI/FP/63388968/1000-gr7.png"
+  },
+  {
+    "name": "LEXUS PEANUT CREAM CHOCOLATE PACKET",
+    "price": "699",
+    "weight": "800g",
+    "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/7/431485589/JO/ER/MR/63388968/rovan-3d-eyeball-candy.png"
+  },
+  {
+    "name": "SNICKERS MINIS CHOCOLATE PACKET",
+    "price": "2000",
+    "weight": "500g",
+    "image_url": "https://www.jiomart.com/images/product/original/rvdcgjq33a/snickers-minis-travel-edition-cs-500-gm-product-images-orvdcgjq33a-p604238270-0-202308301556.jpg?im=Resize=(1000,1000)"
+  },
+  {
+    "name": "MARS MINIS CHOCOLATE PACKET",
+    "price": "1299",
+    "weight": "500g",
+    "image_url": "https://m.media-amazon.com/images/I/71I5RVyfk0L._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "CELEBRATION TRAVEL RETAIL EXCLUSIVE",
+    "price": "1699",
+    "weight": "450g",
+    "image_url": "https://www.cochindutyfree.com/Userfiles/Item/1315086.jpg"
+  },
+  {
+    "name": "KINDER BUENO MINI",
+    "price": "1499",
+    "weight": "400g",
+    "image_url": "https://delhidutyfree.co.in/media/catalog/product/cache/c3073cf0652b87af145d4aff9d92466d/1/5/1501277.png"
+  },
+  {
+    "name": "LADIO CAMEL CHOCOLATE DATES",
+    "price": "750",
+    "weight": "500g",
+    "image_url": "https://cdn.mafrservices.com/pim-content/KEN/media/product/236543/1726862403/236543_main.jpg"
+  },
+  {
+    "name": "TWIX MINIS",
+    "price": "1299",
+    "weight": "500g",
+    "image_url": "https://m.media-amazon.com/images/I/71OJxmOPRVL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "CHIPS OMAN POTATO CHIPS CHILLI FLAVOUR",
+    "price": "35",
+    "weight": "15g",
+    "image_url": "https://m.media-amazon.com/images/I/51Ov9rc2mRL._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "CHIPS OMAN POTATO CHIPS CHILLI FLAVOUR",
+    "price": "190",
+    "weight": "50g",
+    "image_url": "https://m.media-amazon.com/images/I/718SttFoKBL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "SOHAR CHIPS",
+    "price": "25",
+    "weight": "15g",
+    "image_url": "https://cdn.mafrservices.com/sys-master-root/hd9/h8a/9277873422366/281598_main.jpg"
+  },
+  {
+    "name": "SALAD CHIPS",
+    "price": "25",
+    "weight": "15g",
+    "image_url": "https://m.media-amazon.com/images/I/61kmUOqXAEL._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "TIFFANY BUGLES CHIPS",
+    "price": "25",
+    "weight": "10.5g",
+    "image_url": "https://rukminim2.flixcart.com/image/480/480/xif0q/chips/r/w/u/125-bugles-crunchy-corn-snack-chili-unique-shaped-snack-1-original-imagunkauspsujxy.jpeg?q=90"
+  },
+  {
+    "name": "ORIENTAL SUPER RING CHEESE FLAVOUR CHIPS PACKET",
+    "price": "100",
+    "weight": "60g",
+    "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61zamP0OdmL._AC_UL200_SR200,200_.jpg"
+  },
+  {
+    "name": "ORIENTAL CHEESE BALLS CHEESE FLAVOUR CHIPS PACKET",
+    "price": "100",
+    "weight": "60g",
+    "image_url": "https://www.bbassets.com/media/uploads/p/l/40068057_1-oriental-snacks-cheese-balls-cheese-flavoured.jpg"
+  },
+  {
+    "name": "MIAOW MIAOW CHEESE FLAVOURED BALLS CHICPS PACKET",
+    "price": "85",
+    "weight": "60g",
+    "image_url": "https://m.media-amazon.com/images/I/71uDipPOy1L._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "MIAOW MIAOW ONION FLAVOURED RINGS CHIPS PACKET",
+    "price": "85",
+    "weight": "60g",
+    "image_url": "https://m.media-amazon.com/images/I/81v1VcG5HvL._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "POFAK OMAN CHIPS",
+    "price": "25",
+    "weight": "12g",
+    "image_url": "https://m.media-amazon.com/images/I/71NE1hcvpwL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "QATAR PAFKI CRISPY CORN BALLS CHEESE FLAVOUR",
+    "price": "25",
+    "weight": "12g",
+    "image_url": "https://rawabihypermarket.com/uploads/product_images/featured_image/304787.jpg"
+  },
+  {
+    "name": "QATAR PAFKI CRISPY CORN BALLS CHEDDAR AND JALAPENO FLAVOUR",
+    "price": "25",
+    "weight": "15g",
+    "image_url": "https://www.unioncoop.ae/media/catalog/product/m/i/minijalaf_348436_8223_1.png"
+  },
+  {
+    "name": "ORIENTAL SUPER RING CHEESE FLAVOUR",
+    "price": "100",
+    "weight": "80g",
+    "image_url": "https://m.media-amazon.com/images/I/516nW3PQwmL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "name": "ORIENTAL CHEESE BALLS CHEESE FLAVOUR",
+    "price": "100",
+    "weight": "80g",
+    "image_url": "https://m.media-amazon.com/images/I/51LMLDoSZZL._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "TURBO VENTILATOR MINI CANDY",
+    "price": "250",
+    "weight": "5g",
+    "image_url": "https://paikaree.com.bd/public/uploads/products/photos/johny-bee-turbo-ventilator-mini-candy-multi-color---5g-paikaree.webp"
+  },
+  {
+    "name": "FUNNY SNAIL CANDY",
+    "price": "15",
+    "weight": "",
+    "image_url": "https://s.alicdn.com/@sc04/kf/Hd7b188c57d594254aa667befb2fe58abQ/Happyday-snail-toy-candy-fruit-flavor.jpg_300x300.jpg"
+  },
+  {
+    "name": "TORPEDO EGG POP",
+    "price": "140",
+    "weight": "",
+    "image_url": "https://kokos.com/wp-content/uploads/2024/04/62720-display-front.jpg"
+  },
+  {
+    "name": "SUPPER OVER CRICKET BALL CANDY TOYS",
+    "price": "20",
+    "weight": "",
+    "image_url": "https://m.media-amazon.com/images/I/61qBamYrxxL._AC_UF350,350_QL80_.jpg"
+  },
+  {
+    "name": "FUNBRELLA-UMBRELLA CANDY TOYS",
+    "price": "10",
+    "weight": "",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40269749_1-toy-candy-jellybean-candy-umbrella-red-for-kids.jpg"
+  },
+  {
+    "name": "TORPEDO WATER GUN CANDY",
+    "price": "199",
+    "weight": "15g",
+    "image_url": "https://torpedocandy.com/wp-content/uploads/2024/08/Torpedo-Candy-Water-Gun-Display-Box-430x430.webp"
+  }
+]

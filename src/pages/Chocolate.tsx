@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Package, Truck, Shield, Award, ChevronRight, Phone, Plus, Minus, Sparkles, Apple } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ChocolateImg from "../assets/chocolate.jpg";
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
 
 type ChocolateProduct = {
   id: number;
@@ -12,10 +12,20 @@ type ChocolateProduct = {
   basePrice: number;
   description: string;
   image?: string;
-  priceType?: "gram" | "quantity"; // 'gram' for 1-32, 'quantity' for 33-121
+  priceType?: "gram" | "quantity";
 };
 
-const chocolateProducts: ChocolateProduct[] = [
+const chocolateProductsRaw = getProductsByCategory("chocolate");
+const chocolateProducts: ChocolateProduct[] = chocolateProductsRaw.map((product: any, idx: number) => ({
+  id: idx + 1,
+  name: product.name,
+  basePrice: Number(product.price),
+  description: product.weight || "",
+  image: getImagePath(product),
+  priceType: product.weight && product.weight.toLowerCase().includes("g") ? "gram" : "quantity",
+}));
+
+const _UNUSED_PLACEHOLDER = [
   // 1-32: Keep as grams
   { id: 1, name: "TIFFANY DELUXE", basePrice: 40, description: "Tiffany Deluxe Chocolate", image: "/images/chocolate/tiffany_deluxe.jpg", priceType: "gram" },
   { id: 2, name: "COCON JELLY", basePrice: 40, description: "Coconut Jelly Chocolate", image: "/images/chocolate/coconjelly.jpg", priceType: "gram" },
@@ -255,7 +265,6 @@ const Chocolate = () => {
         <div className="absolute top-20 left-10 text-6xl opacity-20 animate-pulse">🍫</div>
         <div className="absolute bottom-20 right-20 text-5xl opacity-20 animate-pulse delay-300">🍬</div>
         <div className="absolute top-1/2 right-10 text-4xl opacity-20 animate-pulse delay-700">🎁</div>
-      </section>
 
       {/* Features Section */}
       <section className="py-12 px-4 -mt-16 relative z-10">

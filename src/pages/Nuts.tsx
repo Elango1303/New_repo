@@ -10,60 +10,18 @@ import AlmondImg from "@/assets/Almond.png";
 import NutsImg from "@/assets/nuts.jpg";
 import MixedImg from "@/assets/mixed.png";
 // product list: basePrice is price per 100g (from the 100g column in total.xlsx)
-const nutsProducts = [
-  // CASHEWS (NUTS)
-  {
-    id: 1,
-    name: "GARLIC CHILLI KO",
-    basePrice: 160,
-    description: "Garlic chilli flavored cashew",
-    image: "/images/nuts/garlic_chilli_ko.jpg",
-  },
-  {
-    id: 2,
-    name: "CHILLI CASHEW",
-    basePrice: 185,
-    description: "Spicy chilli cashew",
-    image: "/images/nuts/chilli_cashew.jpg",
-  },
-  {
-    id: 3,
-    name: "PERI PERI",
-    basePrice: 160,
-    description: "Peri peri roasted cashew",
-    image: "/images/nuts/peri_peri.webp",
-  },
-  {
-    id: 4,
-    name: "GREEN CHILLI",
-    basePrice: 160,
-    description: "Green chilli cashew",
-    image: "/images/nuts/green_chilli.JPG",
-  },
-  {
-    id: 5,
-    name: "TOMATO CHILLI",
-    basePrice: 160,
-    description: "Tomato chilli cashew",
-    image: "/images/nuts/tomato_chilli.webp",
-  },
-  {
-    id: 6,
-    name: "CASHEW SPICY ROASTED",
-    basePrice: 160,
-    description: "Spicy roasted cashew",
-    image: CashewImg,
-  },
-  {
-    id: 7,
-    name: "CASHEW SALT ROASTED",
-    basePrice: 160,
-    description: "Salt roasted cashew",
-    image: "/images/nuts/cashew_salt_roasted.png",
-  },
-  {
-    id: 8,
-    name: "CASHEW CHEESE ROASTED",
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const nutsProductsRaw = getProductsByCategory("nuts");
+const nutsProducts = nutsProductsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  basePrice: Number(product.price),
+  description: product.weight || "",
+  image: getImagePath(product),
+})) || [];
+
+const _UNUSED_PLACEHOLDER = [
     basePrice: 160,
     description: "Cheese roasted cashew",
     image: "/images/nuts/cashew_cheese_roasted.jpg",

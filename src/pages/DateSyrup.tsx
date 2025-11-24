@@ -13,29 +13,34 @@ interface Product {
   image?: string;
 }
 
-const dateSyrupProducts: Product[] = [
-  {
     id: 1,
     name: "DATES SYRUP VIP ARAB 1kg",
     basePrice: 100,
     description: "VIP Arab premium date syrup 1kg",
     image: undefined,
   },
-  {
     id: 2,
     name: "ZAZIO DATE SYRUP 500g",
     basePrice: 80,
     description: "Zazio all natural date syrup 500g",
     image: "/images/dateSyrup/zazio_500g.jpg",
   },
-  {
     id: 3,
     name: "ALL NATURAL DATE SYRUP 400g",
     basePrice: 62,
     description: "All natural date syrup 400g",
     image: "/images/dateSyrup/all_natural_400g.jpg",
   },
-];
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const dateSyrupProductsRaw = getProductsByCategory("dateSyrup");
+const dateSyrupProducts = dateSyrupProductsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  basePrice: Number(product.price),
+  description: product.weight || "",
+  image: getImagePath(product),
+}));
 
 const features = [
   { icon: Leaf, title: "100% Natural", description: "Pure date extract, no artificial additives" },

@@ -14,50 +14,16 @@ interface Product {
   image: string;
 }
 
-const datesProducts: Product[] = [
-  {
-    id: 1,
-    name: "AJWA PREMIUM",
-    basePrice: 210,
-    description: "Premium Ajwa dates",
-    image: "/images/dates/ajwa_premium.jpg",
-  },
-  {
-    id: 2,
-    name: "AJWA PSEL",
-    basePrice: 200,
-    description: "Ajwa PSEL dates",
-    image: "/images/dates/ajwa_psel.jpg",
-  },
-  {
-    id: 3,
-    name: "AJWA MEDIUM",
-    basePrice: 150,
-    description: "Ajwa medium dates",
-    image: "/images/dates/ajwa_medium.png",
-  },
-  {
-    id: 4,
-    name: "PREMIUM MEJDOOL JORDAN JUMBO",
-    basePrice: 195,
-    description: "Premium Medjool Jordan jumbo dates",
-    image: "/images/dates/premium_mejdool_jordan_jumbo.jpg",
-  },
-  {
-    id: 5,
-    name: "MEJDOOL JORDAN",
-    basePrice: 180,
-    description: "Medjool Jordan dates",
-    image: "/images/dates/mejdool_jordan.jpg",
-  },
-  {
-    id: 6,
-    name: "JORDAN MEDIUM",
-    basePrice: 175,
-    description: "Jordan medium dates",
-    image: "/images/dates/jordan_medium.jpg",
-  },
-  {
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const datesProductsRaw = getProductsByCategory("dates");
+const datesProducts = datesProductsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  basePrice: Number(product.price),
+  description: product.weight || "",
+  image: getImagePath(product),
+}));
     id: 7,
     name: "PREMIUM MABROOM JUMBO",
     basePrice: 145,

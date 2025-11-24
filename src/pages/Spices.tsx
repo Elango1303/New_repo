@@ -13,51 +13,53 @@ interface Product {
   image?: string;
 }
 
-const spicesProducts: Product[] = [
-  {
     id: 1,
     name: "CARDAMOM",
     basePrice: 600,
     description: "Premium green cardamom pods",
     image: undefined,
   },
-  {
     id: 2,
     name: "CINNAMON STICK",
     basePrice: 75,
     description: "Whole cinnamon sticks",
     image: "/images/spices/cinnamon_stick.jpg",
   },
-  {
     id: 3,
     name: "CINNAMON ROLL",
     basePrice: 105,
     description: "Rolled cinnamon",
     image: "/images/spices/cinnamon_roll.jpeg",
   },
-  {
     id: 4,
     name: "BRIYANI LEAF",
     basePrice: 34,
     description: "Bay leaf for biryani and curries",
     image: "/images/spices/biriyani_leaf.jpg",
   },
-  {
     id: 5,
     name: "GRAMPU",
     basePrice: 200,
     description: "Whole cloves (grambu)",
     image: "/images/spices/grampu.jpg",
   },
-  {
     id: 6,
     name: "KALPASI",
     basePrice: 110,
     description: "Black stone flower (kalpasi)",
     image: "/images/spices/kalpasi.png",
   },
-  {
     id: 7,
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const spicesProductsRaw = getProductsByCategory("spices");
+const spicesProducts = spicesProductsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  basePrice: Number(product.price),
+  description: product.weight || "",
+  image: getImagePath(product),
+}));
     name: "THAKKOLAM",
     basePrice: 105,
     description: "Star anise (thakkolam)",

@@ -14,21 +14,16 @@ type ChipProduct = {
   image?: string;
 };
 
-// chips product list: basePrice is price per unit now (was per 100g)
-// use public image paths (place images in public/images/chips/) or change to imports
-const chipsProducts: ChipProduct[] = [
-  { id: 1, name: "LAY'S CLASSIC", basePrice: 35, description: "Classic salted potato chips", image: "/images/chips/plainsalt.jpg" },
-  { id: 2, name: "CHEESE BALLS", basePrice: 40, description: "Cheesy crunchy bites", image: "/images/chips/cheeseballs.jpg" },
-  { id: 3, name: "KETTLE SALT", basePrice: 45, description: "Kettle cooked salt chips", image: "/images/chips/kettlesalt.jpg" },
-  { id: 4, name: "SWEET CHILLI", basePrice: 38, description: "Sweet chilli flavored chips", image: "/images/chips/sweetchilli.jpg" },
-  { id: 5, name: "BBQ", basePrice: 40, description: "Barbecue flavored chips", image: "/images/chips/bbq.jpg" },
-  { id: 6, name: "SOUR CREAM & ONION", basePrice: 42, description: "Sour cream & onion", image: "/images/chips/sourcream.jpg" },
-  { id: 7, name: "PERI PERI", basePrice: 44, description: "Peri peri spicy chips", image: "/images/chips/periperi.jpg" },
-  { id: 8, name: "MEXICAN", basePrice: 39, description: "Mexican spicy mix", image: "/images/chips/mexican.jpg" },
-  { id: 9, name: "MASALA", basePrice: 36, description: "Indian masala chips", image:"/images/chips/masalachips.jpg" },
-  { id: 10, name: "PLAIN SALT", basePrice: 30, description: "Plain salted chips", image: "/images/chips/plainsalt.jpg" },
-  { id: 11, name: "OMAN CHIPS", basePrice: 35, description: "OMAN chips", image: "/images/omanchip.jpg" },
-];
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const chipsProductsRaw = getProductsByCategory("chips");
+const chipsProducts = chipsProductsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  basePrice: Number(product.price),
+  description: product.weight || "",
+  image: getImagePath(product),
+}));
 
 const features = [
   { icon: Truck, title: "Fresh Stock", description: "Regularly replenished for crunch" },

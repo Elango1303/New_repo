@@ -19,45 +19,22 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// Product data
-const biscuitsProducts = [
-  { 
-    id: 1, 
-    name: "NUTELLA BISCUIT POUCH", 
-    price: 780, 
-    rating: 4.9,
-    reviews: 245,
-    description: "Hazelnut cream filled biscuits",
-    badge: "Best Seller",
-    weight: "276g",
-    image: "/images/raphotos/nutella_biscuits.jpg"
-  },
-  { 
-    id: 2, 
-    name: "MUNCHEE LEMON FLAVOUR", 
-    price: 60, 
-    rating: 4.8,
-    reviews: 198,
-    description: "Refreshing lemon biscuits",
-    weight: "200g",
-    image: "/images/raphotos/lemon_creams.jpg"
-  },
-  { 
-    id: 3, 
-    name: "MUNCHEE SUPER CREAM CRACKER", 
-    price: 60, 
-    rating: 4.7,
-    reviews: 156,
-    description: "Crispy cream crackers",
-    weight: "200g",
-    image: "/images/raphotos/cream_cracker.jpg"
-  },
-  { 
-    id: 4, 
-    name: "MUNCHEE MILK BISCUIT", 
-    price: 20, 
-    rating: 4.9,
-    reviews: 203,
+import { getProductsByCategory, getImagePath } from "@/lib/productUtils";
+
+const biscuitsProductsRaw = getProductsByCategory("biscuits");
+const biscuitsProducts = biscuitsProductsRaw.map((product, idx) => ({
+  id: idx + 1,
+  name: product.name,
+  price: Number(product.price),
+  rating: 0,
+  reviews: 0,
+  description: product.weight || "",
+  badge: product.badge || "",
+  weight: product.weight || "",
+  image: getImagePath(product),
+})) || [];
+
+const _UNUSED_PLACEHOLDER = [
     description: "Classic milk biscuits",
     weight: "75g",
     image: "/images/raphotos/cream_cracker.jpg"
