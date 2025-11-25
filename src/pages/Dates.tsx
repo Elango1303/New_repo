@@ -5,6 +5,7 @@ import { Heart, Palmtree, Truck, Shield, Award, ChevronRight, Sun, Sparkles, Lea
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import DatesImg from "../assets/dates.jpg";
+import { csvProducts } from "@/data/csvMapping";
 
 interface Product {
   id: number;
@@ -114,6 +115,23 @@ interface Feature {
   description: string;
 }
 
+// Enhance dates with CSV data when available (price per 100g & image)
+const datesCsvByName = new Map(
+  csvProducts
+    .filter((p) => p.category === "DATES")
+    .map((p) => [p.name.toUpperCase().trim(), p])
+);
+
+const enhancedDatesProducts: Product[] = datesProducts.map((p) => {
+  const m = datesCsvByName.get(p.name.toUpperCase());
+  if (!m) return p;
+  return {
+    ...p,
+    basePrice: m.pcsRate || p.basePrice,
+    image: m.imagePath || p.image,
+  };
+});
+
 const features: Feature[] = [
   { icon: Palmtree, title: "Premium Quality", description: "Handpicked dates" },
   { icon: Truck, title: "Quick Delivery", description: "Fresh delivery" },
@@ -194,10 +212,10 @@ const Dates = () => {
           </div>
         </div>
 
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 text-6xl opacity-20 animate-pulse">🌴</div>
-        <div className="absolute bottom-20 right-20 text-5xl opacity-20 animate-pulse delay-300">🌴</div>
-        <div className="absolute top-1/2 right-10 text-4xl opacity-20 animate-pulse delay-700">🌴</div>
+        {/* Floating Elements - hide on small screens to avoid overlap */}
+        <div className="hidden md:block absolute top-20 left-10 text-6xl opacity-20 animate-pulse">🌴</div>
+        <div className="hidden md:block absolute bottom-20 right-20 text-5xl opacity-20 animate-pulse delay-300">🌴</div>
+        <div className="hidden md:block absolute top-1/2 right-10 text-4xl opacity-20 animate-pulse delay-700">🌴</div>
       </section>
 
       {/* Features Section */}
@@ -274,7 +292,7 @@ const Dates = () => {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {datesProducts.map((product) => (
+          {enhancedDatesProducts.map((product) => (
             <Card 
               key={product.id} 
               className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-amber-200 dark:hover:border-amber-700 relative"

@@ -9,6 +9,7 @@ import PistaImg from "@/assets/Pista.png";
 import AlmondImg from "@/assets/Almond.png";
 import NutsImg from "@/assets/nuts.jpg";
 import MixedImg from "@/assets/mixed.png";
+import { csvProducts } from "@/data/csvMapping";
 // product list: basePrice is price per 100g (from the 100g column in total.xlsx)
 const nutsProducts = [
   // CASHEWS (NUTS)
@@ -260,6 +261,23 @@ const nutsProducts = [
   },
 ];
 
+// Enhance nuts with CSV data (price per 100g & image) when available
+const nutsCsvByName = new Map(
+  csvProducts
+    .filter((p) => p.category === "NUTS")
+    .map((p) => [p.name.toUpperCase().trim(), p])
+);
+
+const enhancedNutsProducts = nutsProducts.map((p) => {
+  const m = nutsCsvByName.get(p.name.toUpperCase());
+  if (!m) return p;
+  return {
+    ...p,
+    basePrice: m.pcsRate || p.basePrice,
+    image: m.imagePath || p.image,
+  };
+});
+
 const features = [
   { icon: Leaf, title: "100% Natural", description: "No artificial preservatives or additives" },
   { icon: Truck, title: "Fresh Delivery", description: "Farm-fresh nuts delivered daily" },
@@ -342,10 +360,10 @@ const Nuts = () => {
           </div>
         </div>
 
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 text-6xl opacity-20 animate-pulse">🥜</div>
-        <div className="absolute bottom-20 right-20 text-5xl opacity-20 animate-pulse delay-300">🌰</div>
-        <div className="absolute top-1/2 right-10 text-4xl opacity-20 animate-pulse delay-700">🍃</div>
+        {/* Floating Elements - hide on small screens to avoid overlap */}
+        <div className="hidden md:block absolute top-20 left-10 text-6xl opacity-20 animate-pulse">🥜</div>
+        <div className="hidden md:block absolute bottom-20 right-20 text-5xl opacity-20 animate-pulse delay-300">🌰</div>
+        <div className="hidden md:block absolute top-1/2 right-10 text-4xl opacity-20 animate-pulse delay-700">🍃</div>
       </section>
 
       {/* Features Section */}
@@ -422,7 +440,7 @@ const Nuts = () => {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {nutsProducts.map((product) => (
+          {enhancedNutsProducts.map((product) => (
             <Card 
               key={product.id} 
               className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-green-200 dark:hover:border-green-700 relative"

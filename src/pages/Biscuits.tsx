@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { csvProducts } from "@/data/csvMapping";
 
 // Product data
 const biscuitsProducts = [
@@ -333,6 +334,23 @@ const biscuitsProducts = [
   },
 ];
 
+// Enhance biscuits with CSV data (price & image) when available
+const biscuitsCsvByName = new Map(
+  csvProducts
+    .filter((p) => p.category === "BISCUITS")
+    .map((p) => [p.name.toUpperCase().trim(), p])
+);
+
+const enhancedBiscuitsProducts = biscuitsProducts.map((p) => {
+  const m = biscuitsCsvByName.get(p.name.toUpperCase());
+  if (!m) return p;
+  return {
+    ...p,
+    price: m.pcsRate || p.price,
+    image: m.imagePath || p.image,
+  };
+});
+
 const features = [
   { icon: Cookie, title: "Fresh Baked", description: "Daily fresh batches" },
   { icon: Truck, title: "Quick Delivery", description: "Same day delivery" },
@@ -493,7 +511,7 @@ const Biscuits = () => {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-          {biscuitsProducts.map((product) => (
+          {enhancedBiscuitsProducts.map((product) => (
             <Card 
               key={product.id} 
               className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-amber-200 dark:hover:border-amber-700 relative"
@@ -527,18 +545,18 @@ const Biscuits = () => {
                 />
               </button>
 
-              <div className="aspect-square overflow-hidden bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-700 dark:to-slate-600 relative">
+              <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-700 dark:to-slate-600 relative">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.1)_0%,_transparent_70%)]"></div>
-                <div className="w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500 relative z-10">
+                <div className="w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform duration-500 relative z-10 p-4">
                   {product.image ? (
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover"
-                      onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+                      className="max-w-full max-h-full object-contain"
+                      onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
                     />
                   ) : (
-                    <div className="text-8xl">🍪</div>
+                    <div className="text-6xl">🍪</div>
                   )}
                 </div>
               </div>

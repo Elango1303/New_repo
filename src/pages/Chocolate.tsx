@@ -5,6 +5,7 @@ import { Heart, Package, Truck, Shield, Award, ChevronRight, Phone, Plus, Minus,
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ChocolateImg from "../assets/chocolate.jpg";
+import { csvProducts } from "@/data/csvMapping";
 
 type ChocolateProduct = {
   id: number;
@@ -51,7 +52,7 @@ const chocolateProducts: ChocolateProduct[] = [
   { id: 32, name: "SALSA VALETINE RED DATES CHOCOLATE", basePrice: 110, description: "Salsa Valentine Red Dates", image: "/images/chocolate/salsavaletine.jpg", priceType: "gram" },
 
   // 33-121: Changed to quantity (basePrice is per unit)
-  { id: 33, name: "LOTUS KUNAFA SMALL", basePrice: 50, description: "Lotus Kunafa Small", image: "/images/chocolate/Dubai-Kunafa-Lotus.webp", priceType: "quantity" },
+  { id: 33, name: "LOTUS KUNAFA SMALL", basePrice: 50, description: "Lotus Kunafa Small", image: "/images/chocolate/lotus-kunafa-small.jpg", priceType: "quantity" },
   { id: 34, name: "KUNAFA GOLD", basePrice: 55, description: "Kunafa Gold", image: "/images/raphotos/kunafa_gold.jpg", priceType: "quantity" },
   { id: 35, name: "DUBAI MILAN KUNAFA", basePrice: 400, description: "Dubai Milan Kunafa 45g", image: "/images/raphotos/kunafa_dubai.jpg", priceType: "quantity" },
   { id: 36, name: "KUNAFA CHOCOLATE", basePrice: 500, description: "Kunafa Chocolate 200g", image: "/images/raphotos/kunafa_dubai1.jpg", priceType: "quantity" },
@@ -59,37 +60,37 @@ const chocolateProducts: ChocolateProduct[] = [
   { id: 38, name: "G3 DUBAI CHOCOLATE GREEN", basePrice: 500, description: "G3 Dubai Chocolate Green 100g", image: "/images/raphotos/kunafa_yellow1.jpg", priceType: "quantity" },
   { id: 39, name: "G3 DUBAI CHOCOLATE", basePrice: 500, description: "G3 Dubai Chocolate 100g", image:"/images/raphotos/kunafa1.jpg", priceType: "quantity" },
   { id: 40, name: "ARABIAN TREATZ KUNAFA STRAWBERRY", basePrice: 600, description: "Kunafa Strawberry 100g", image: "/images/raphotos/kunafachocolate.jpg", priceType: "quantity" },
-  { id: 41, name: "ARABIAN TREATZ KUNAFA PISTACHIO", basePrice: 600, description: "Kunafa Pistachio 100g", image: "/images/raphotos/kunafa_dubai1.jpg", priceType: "quantity" },
+  { id: 41, name: "ARABIAN TREATZ KUNAFA PISTACHIO", basePrice: 600, description: "Kunafa Pistachio 100g", image: "/images/chocolate/arabian-treatz-kunafa-pistachio.jpg", priceType: "quantity" },
   { id: 42, name: "ARABIAN TREATZ KUNAFA MANGO", basePrice: 600, description: "Kunafa Mango 100g", image: "/images/raphotos/kunafa_yellow.jpg", priceType: "quantity" },
   { id: 43, name: "KUNAFA LIMITED EDITION", basePrice: 420, description: "Limited Edition 50g", image: "/images/raphotos/kunafa_yellow1.jpg", priceType: "quantity" },
-  { id: 44, name: "MILLENNIUM DARK CHOCOLATE 99%", basePrice: 600, description: "Dark Chocolate 99% 100g", image: "/images/raphotos/dark_forest.jpg", priceType: "quantity" },
+  { id: 44, name: "MILLENNIUM DARK CHOCOLATE 99%", basePrice: 600, description: "Dark Chocolate 99% 100g", image: "/images/chocolate/millennium-dark-chocolate-99.jpg", priceType: "quantity" },
   { id: 45, name: "MILLENNIUM BRUT DARK CHOCOLATE 74%", basePrice: 600, description: "Dark Chocolate 74% 100g", image:"/images/raphotos/dark_forest.jpg", priceType: "quantity" },
-  { id: 46, name: "LINDT DARK CHOCOLATE 70%", basePrice: 600, description: "Lindt Dark 70% 100g", image: "/images/raphotos/70_dark_chocolate.jpg", priceType: "quantity" },
-  { id: 47, name: "GALAXY DARK CHOCOLATE", basePrice: 130, description: "Galaxy Dark 36g", image: "/images/raphotos/glalaxy_dark.jpg", priceType: "quantity" },
-  { id: 48, name: "GALAXY SMOOTH WHITE", basePrice: 130, description: "Galaxy White 38g", image: "/images/raphotos/galaxy.jpg", priceType: "quantity" },
+  { id: 46, name: "LINDT DARK CHOCOLATE 70%", basePrice: 600, description: "Lindt Dark 70% 100g", image: "/images/chocolate/lindt-dark-chocolate-70.jpg", priceType: "quantity" },
+  { id: 47, name: "GALAXY DARK CHOCOLATE", basePrice: 130, description: "Galaxy Dark 36g", image: "/images/chocolate/galaxy-dark-chocolate.jpg", priceType: "quantity" },
+  { id: 48, name: "GALAXY SMOOTH WHITE", basePrice: 130, description: "Galaxy White 38g", image: "/images/chocolate/galaxy-smooth-white.jpg", priceType: "quantity" },
   { id: 49, name: "FIDJI CAPPUCCINO", basePrice: 320, description: "Fidji Cappuccino 90g", image:"/images/raphotos/cappuccino.jpg", priceType: "quantity" },
   { id: 50, name: "FIDJI STRAWBERRY", basePrice: 320, description: "Fidji Strawberry 90g", image: "/images/raphotos/cappuccino.jpg", priceType: "quantity" },
   { id: 51, name: "FIDJI HAZELNUT", basePrice: 320, description: "Fidji Hazelnut 90g", image: "/images/raphotos/70_dark_chocolate.jpg", priceType: "quantity" },
-  { id: 52, name: "KIT KAT DARK CHOCOLATE", basePrice: 220, description: "Kit Kat Dark 150g", image: "/images/raphotos/kitkat_dark.jpg", priceType: "quantity" },
+  { id: 52, name: "KIT KAT DARK CHOCOLATE", basePrice: 220, description: "Kit Kat Dark 150g", image: "/images/chocolate/kit-kat-dark-chocolate.jpg", priceType: "quantity" },
   { id: 53, name: "KIT KAT DELIGHT", basePrice: 220, description: "Kit Kat Delight 150g", image: "/images/chocolate/kitkatdekight.jpg", priceType: "quantity" },
-  { id: 54, name: "SNICKERS 50G", basePrice: 70, description: "Snickers 50g", image: "/images/raphotos/snicker_normal.jpg", priceType: "quantity" },
+  { id: 54, name: "SNICKERS 50G", basePrice: 70, description: "Snickers 50g", image: "/images/chocolate/snickers-50g.jpg", priceType: "quantity" },
   { id: 55, name: "TWIX 50G", basePrice: 70, description: "Twix 50g", image: "/images/raphotos/twix.jpg", priceType: "quantity" },
-  { id: 56, name: "KIT KAT 4PCS", basePrice: 90, description: "Kit Kat 4pcs 41.5g", image: "/images/raphotos/kitkat.jpg", priceType: "quantity" },
+  { id: 56, name: "KIT KAT 4PCS", basePrice: 90, description: "Kit Kat 4pcs 41.5g", image: "/images/chocolate/kit-kat-4pcs.jpg", priceType: "quantity" },
   { id: 57, name: "MARS 90", basePrice: 90, description: "Mars 20g", image: "/images/raphotos/mars.jpg", priceType: "quantity" },
   { id: 58, name: "SNICKERS CARAMEL", basePrice: 145, description: "Snickers Caramel 42g", image:"/images/raphotos/snickers_almond.jpg", priceType: "quantity" },
   { id: 59, name: "MILK CHOCOLATE", basePrice: 62, description: "Milk Chocolate", image: "/images/raphotos/milka_normal.jpg", priceType: "quantity" },
-  { id: 60, name: "KIT KAT 8PCS PACK", basePrice: 400, description: "Kit Kat 8pcs 141.6g", image: "/images/coco/kitkat8.jpg", priceType: "quantity" },
-  { id: 61, name: "SNICKERS 5PCS PACK", basePrice: 250, description: "Snickers 5pcs 115g", image: "/images/raphotos/snicker_normal.jpg", priceType: "quantity" },
-  { id: 62, name: "KINDER CARDS 76G", basePrice: 500, description: "Kinder Cards 76g", image: "/images/raphotos/kinder_cards.jpg", priceType: "quantity" },
+  { id: 60, name: "KIT KAT 8PCS PACK", basePrice: 400, description: "Kit Kat 8pcs 141.6g", image: "/images/chocolate/kit-kat-8pcs-pack.jpg", priceType: "quantity" },
+  { id: 61, name: "SNICKERS 5PCS PACK", basePrice: 250, description: "Snickers 5pcs 115g", image: "/images/chocolate/snickers-5pcs-pack.jpg", priceType: "quantity" },
+  { id: 62, name: "KINDER CARDS 76G", basePrice: 500, description: "Kinder Cards 76g", image: "/images/chocolate/kinder-cards-76g.png", priceType: "quantity" },
   { id: 63, name: "KINDER CARDS 256G", basePrice: 1099, description: "Kinder Cards 256g", image:"/images/raphotos/kinder_cardss.jpg", priceType: "quantity" },
-  { id: 64, name: "KINDER CHOCOLATE", basePrice: 25, description: "Kinder Chocolate 14g", image: "/images/raphotos/kinder_joy.jpg", priceType: "quantity" },
-  { id: 65, name: "KINDER CREAMY", basePrice: 30, description: "Kinder Creamy 19g", image: "/images/raphotos/kinder_creamy.jpg", priceType: "quantity" },
+  { id: 64, name: "KINDER CHOCOLATE", basePrice: 25, description: "Kinder Chocolate 14g", image: "/images/chocolate/kinder-chocolate.jpg", priceType: "quantity" },
+  { id: 65, name: "KINDER CREAMY", basePrice: 30, description: "Kinder Creamy 19g", image: "/images/chocolate/kinder-creamy.jpg", priceType: "quantity" },
   { id: 66, name: "HERSHEY'S EXTRA CREAMY", basePrice: 500, description: "Hershey's Extra Creamy 50g", image: "/images/raphotos/hershey_cream.jpg", priceType: "quantity" },
-  { id: 67, name: "HERSHEY'S SPECIAL DARK", basePrice: 500, description: "Hershey's Dark 50g", image: "/images/raphotos/hershey_specialdark.jpg", priceType: "quantity" },
+  { id: 67, name: "HERSHEY'S SPECIAL DARK", basePrice: 500, description: "Hershey's Dark 50g", image: "/images/chocolate/hershey-s-special-dark.jpg", priceType: "quantity" },
   { id: 68, name: "DAIRY MILK WHOLENUT", basePrice: 2000, description: "Dairy Milk Wholenut 300g", image:"/images/raphotos/dairymilk_wholenut.jpg", priceType: "quantity" },
-  { id: 69, name: "DAIRY MILK TRIPPLE CHOCOLATE", basePrice: 2000, description: "Triple Chocolate 300g", image: "/images/raphotos/dairy_milk_bar.jpg", priceType: "quantity" },
+  { id: 69, name: "DAIRY MILK TRIPPLE CHOCOLATE", basePrice: 2000, description: "Triple Chocolate 300g", image: "/images/chocolate/dairy-milk-tripple-chocolate.jpg", priceType: "quantity" },
   { id: 70, name: "DAIRY MILK CHOCOLATE", basePrice: 2000, description: "Dairy Milk 300g", image:"/images/raphotos/dairymilk.jpg", priceType: "quantity" },
-  { id: 71, name: "KINDER JOY", basePrice: 50, description: "Kinder Joy 20g", image: "/images/raphotos/kinder_joy.jpg", priceType: "quantity" },
+  { id: 71, name: "KINDER JOY", basePrice: 50, description: "Kinder Joy 20g", image: "/images/chocolate/kinder-joy.png", priceType: "quantity" },
   { id: 72, name: "TOBLERONE 35G", basePrice: 90, description: "Toblerone 35g", image: "/images/raphotos/kinder_creamy.jpg", priceType: "quantity" },
   { id: 73, name: "DUBAI CHOCOLATE PACKET", basePrice: 1500, description: "Dubai Chocolate 200g", image: "/images/raphotos/toblerone_black.jpg", priceType: "quantity" },
   { id: 74, name: "TOBLERONE MILK CHOCOLATE 100G", basePrice: 325, description: "Toblerone Milk 100g", image:"/images/coco/milk.jpg", priceType: "quantity" },
@@ -99,8 +100,8 @@ const chocolateProducts: ChocolateProduct[] = [
   { id: 78, name: "TOBLERONE 200G PACKET", basePrice: 1099, description: "Toblerone 200g", image: "/images/coco/tobleronenormal.jpg", priceType: "quantity" },
   { id: 79, name: "DAIM CHOCOLATE PACKET", basePrice: 780, description: "Daim Chocolate 200g", image: "/images/raphotos/daim.jpg", priceType: "quantity" },
   { id: 80, name: "JEWELS GALAXY CHOCOLATE BOX", basePrice: 1499, description: "Galaxy Jewels 383g", image: "/images/raphotos/jewels_chocolates.jpg", priceType: "quantity" },
-  { id: 81, name: "CHOCO TIDO", basePrice: 20, description: "Choco Tido 18g", image: "/images/coco/tido.jpg", priceType: "quantity" },
-  { id: 82, name: "SAFARI", basePrice: 30, description: "Safari 22g", image: "/images/raphotos/safar_chocolate.jpg", priceType: "quantity" },
+  { id: 81, name: "CHOCO TIDO", basePrice: 20, description: "Choco Tido 18g", image: "/images/chocolate/choco-tido.jpg", priceType: "quantity" },
+  { id: 82, name: "SAFARI", basePrice: 30, description: "Safari 22g", image: "/images/chocolate/safari.jpg", priceType: "quantity" },
   { id: 83, name: "HERSHEY'S COOKIES AND CREAM", basePrice: 110, description: "Cookies & Cream 40g", image: "/images/raphotos/hershey_cream.jpg", priceType: "quantity" },
   { id: 84, name: "TRUFFE SELECTION CHOCOLATES BOX", basePrice: 150, description: "Truffe Selection 250g", image: "/images/coco/truffe.jpg", priceType: "quantity" },
   { id: 85, name: "BREAK CHOCOLATE", basePrice: 60, description: "Break Chocolate 25g", image:"/images/raphotos/darkchocolate1.jpg", priceType: "quantity" },
@@ -109,21 +110,21 @@ const chocolateProducts: ChocolateProduct[] = [
   { id: 88, name: "HISS CRISPY WAFER", basePrice: 25, description: "Crispy Wafer 21g", image:"/images/coco/crispywafer.jpg", priceType: "quantity" },
   { id: 89, name: "MALTESERS", basePrice: 140, description: "Maltesers 37g", image: "/images/raphotos/maltesers.jpg", priceType: "quantity" },
   { id: 90, name: "LOACKER CLASIC NAPOLITANER", basePrice: 130, description: "Loacker 45g", image:"/images/raphotos/loacker_bar.jpg", priceType: "quantity" },
-  { id: 91, name: "M&M CRISPY", basePrice: 130, description: "M&M Crispy 36g", image: "/images/raphotos/M%26m_chocolate.jpg", priceType: "quantity" },
-  { id: 92, name: "M&M PEANUT", basePrice: 130, description: "M&M Peanut 45g", image: "/images/raphotos/m%26m_yellow.jpg", priceType: "quantity" },
-  { id: 93, name: "M&M CHOCOLATE", basePrice: 130, description: "M&M Chocolate 45g", image: "/images/raphotos/m%26m_chocolate_dark.jpg", priceType: "quantity" },
+  { id: 91, name: "M&M CRISPY", basePrice: 130, description: "M&M Crispy 36g", image: "/images/chocolate/m-m-crispy.jpg", priceType: "quantity" },
+  { id: 92, name: "M&M PEANUT", basePrice: 130, description: "M&M Peanut 45g", image: "/images/chocolate/m-m-peanut.png", priceType: "quantity" },
+  { id: 93, name: "M&M CHOCOLATE", basePrice: 130, description: "M&M Chocolate 45g", image: "/images/chocolate/m-m-chocolate.jpg", priceType: "quantity" },
   { id: 94, name: "MILKA OREO", basePrice: 249, description: "Milka Oreo 90g", image: "/images/raphotos/milka_oreo.jpg", priceType: "quantity" },
   { id: 95, name: "MILKA STRAWBERRY", basePrice: 240, description: "Milka Strawberry 90g", image: "/images/raphotos/milka_straw.jpg", priceType: "quantity" },
   { id: 96, name: "MILKA ALPINE MILK", basePrice: 240, description: "Milka Alpine 98g", image: "/images/raphotos/milka1.jpg", priceType: "quantity" },
   { id: 97, name: "MILKA BUBBLY", basePrice: 249, description: "Milka Bubbly 90g", image: "/images/raphotos/milkachocolate.jpg", priceType: "quantity" },
   { id: 98, name: "MILKA CARAMEL", basePrice: 240, description: "Milka Caramel 95g", image:"/images/raphotos/milka.jpg", priceType: "quantity" },
-  { id: 99, name: "CADBURY DAIRY MILK HAZELNUT", basePrice: 420, description: "Hazelnut 130g", image: "/images/coco/hazelnut.jpg", priceType: "quantity" },
+  { id: 99, name: "CADBURY DAIRY MILK HAZELNUT", basePrice: 420, description: "Hazelnut 130g", image: "/images/chocolate/cadbury-dairy-milk-hazelnut.jpg", priceType: "quantity" },
   { id: 100, name: "CADBURY BLACK FOREST", basePrice: 420, description: "Black Forest 130g", image: "/images/raphotos/dairymilk_black_forest.jpg", priceType: "quantity" },
   { id: 101, name: "CADBURY MILK CHOCOLATE", basePrice: 420, description: "Milk Chocolate 135g", image: "/images/raphotos/dairymilk.jpg", priceType: "quantity" },
-  { id: 102, name: "DAIRY MILK ROAST ALMOND", basePrice: 420, description: "Roast Almond 130g", image: "/images/raphotos/dairymilk_wholenut.jpg", priceType: "quantity" },
+  { id: 102, name: "DAIRY MILK ROAST ALMOND", basePrice: 420, description: "Roast Almond 130g", image: "/images/chocolate/dairy-milk-roast-almond.jpg", priceType: "quantity" },
   { id: 103, name: "CADBURY BUBBLY", basePrice: 290, description: "Bubbly 87g", image: "/images/raphotos/dairy_milk_bubbly.jpg", priceType: "quantity" },
   { id: 104, name: "RAFFAELLO", basePrice: 160, description: "Raffaello 30g", image: "/images/raphotos/kinder_creamy.jpg", priceType: "quantity" },
-  { id: 105, name: "BOUNTY BAR", basePrice: 101, description: "Bounty 57g", image: "/images/raphotos/bounty.jpg", priceType: "quantity" },
+  { id: 105, name: "BOUNTY BAR", basePrice: 101, description: "Bounty 57g", image: "/images/chocolate/bounty-bar.jpg", priceType: "quantity" },
   { id: 106, name: "KOPIKO CAPPUCCINO CHOCOLATE", basePrice: 499, description: "Kopiko Cappuccino 400g", image: "/images/raphotos/kopiko_chocolate.jpg", priceType: "quantity" },
   { id: 107, name: "KOPIKO COFFEE CHOCOLATE", basePrice: 499, description: "Kopiko Coffee 400g", image: "/images/raphotos/kopiko.jpg", priceType: "quantity" },
   { id: 108, name: "LEXUS COCONUT CREAM CHOCOLATE", basePrice: 699, description: "Coconut Cream 800g", image:"/images/raphotos/cocn_straberry.jpg", priceType: "quantity" },
@@ -141,6 +142,29 @@ const chocolateProducts: ChocolateProduct[] = [
   { id: 120, name: "NESTLE QUALITY STREET", basePrice: 1900, description: "Quality Street 900g", image: "/images/coco/qualitystreet.jpg", priceType: "quantity" },
   { id: 121, name: "SAPPHIRE ALMOND HEART SHAPED", basePrice: 475, description: "Heart Shaped 160g", image: "/images/coco/heart.jpg", priceType: "quantity" },
 ];
+
+// Enhance chocolates with CSV data (quantity items: price & image; all: image) when available
+const chocolatesCsvByName = new Map(
+  csvProducts
+    .filter((p) => p.category === "CHOCOLATES")
+    .map((p) => [p.name.toUpperCase().trim(), p])
+);
+
+const enhancedChocolateProducts: ChocolateProduct[] = chocolateProducts.map((p) => {
+  const m = chocolatesCsvByName.get(p.name.toUpperCase());
+  if (!m) return p;
+
+  const updated: ChocolateProduct = {
+    ...p,
+    image: m.imagePath || p.image,
+  };
+
+  if (p.priceType === "quantity") {
+    updated.basePrice = m.pcsRate || p.basePrice;
+  }
+
+  return updated;
+});
 
 const features = [
   { icon: Package, title: "Premium Quality", description: "Handcrafted with finest ingredients" },
@@ -251,10 +275,10 @@ const Chocolate = () => {
           </div>
         </div>
 
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 text-6xl opacity-20 animate-pulse">🍫</div>
-        <div className="absolute bottom-20 right-20 text-5xl opacity-20 animate-pulse delay-300">🍬</div>
-        <div className="absolute top-1/2 right-10 text-4xl opacity-20 animate-pulse delay-700">🎁</div>
+        {/* Floating Elements - hide on small screens to avoid overlap */}
+        <div className="hidden md:block absolute top-20 left-10 text-6xl opacity-20 animate-pulse">🍫</div>
+        <div className="hidden md:block absolute bottom-20 right-20 text-5xl opacity-20 animate-pulse delay-300">🍬</div>
+        <div className="hidden md:block absolute top-1/2 right-10 text-4xl opacity-20 animate-pulse delay-700">🎁</div>
       </section>
 
       {/* Features Section */}
@@ -331,7 +355,7 @@ const Chocolate = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {chocolateProducts.map((product) => (
+          {enhancedChocolateProducts.map((product) => (
             <Card
               key={product.id}
               className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-amber-200 relative"
